@@ -13,15 +13,10 @@ Baasprofiiliga saab kirjeldada ka järgmised tõendid:
 ```mermaid
 graph TD
     EEHealthCertificate -->|päritud| EEHealthCertificateOccupational
-    EEHealthCertificateOccupational -->|Töötajale| EEHealthCertificateOccupationalEmployee
     EEHealthCertificateOccupational -->|Tööandjale| EEHealthCertificateOccupationalEmployer
 ```
 
 ### Töötervishoiu tervisetõend
 
-*[EEHealthCertificateOccupational](StructureDefinition-ee-health-certificate-occupational.html)* on tervishoiu tervisetõendite baasprofiil. Mõeldud spetsialistidele (sh arstidele) andmete kuvamiseks. Omakorda jaguneb kaheks profiiliks:
-
-| Profiil                                                                                                         | Otstarbe                                             |
-|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [EEHealthCertificateOccupationalEmployee](StructureDefinition-ee-health-certificate-occupational-employee.html) | Töötervishoiu tervisetõend töötajale väljastamiseks  |
-| [EEHealthCertificateOccupationalEmployer](StructureDefinition-ee-health-certificate-occupational-employer.html) | Töötervishoiu tervisetõend tööandjale väljastamiseks |
+*[EEHealthCertificateOccupational](StructureDefinition-ee-health-certificate-occupational.html)* on tervishoiu tervisetõendite baasprofiil. Mõeldud spetsialistidele (sh arstidele) ja töötajale andmete kuvamiseks.
+Selle alamprofiil [EEHealthCertificateOccupationalEmployer](StructureDefinition-ee-health-certificate-occupational-employer.html)  on mõeldud tööandjale andmete väljastamiseks.
