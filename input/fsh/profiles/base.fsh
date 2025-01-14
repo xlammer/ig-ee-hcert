@@ -1,3 +1,9 @@
+Profile: HcertObservation
+Parent: Observation
+Title: "Temporary observation profile"
+Description: "Remove this profile when https://github.com/HL7/fhir-ig-publisher/issues/1018 is fixed an new IG publisher is released"
+* referenceRange 0..0
+
 Extension: EEHealthCertificateConfidentialityExt
 Id: ee-health-certificate-confidentiality
 Title: "Tervisetõendi konfidentsiaalsus"
@@ -18,6 +24,7 @@ Description: "Tervisetõend baasprofiil"
 * url ..0
 * identifier 1..1
 * identifier ^short = "Dokumendi number"
+* identifier.system = "https://fhir.ee/hcert/health-certificate-number"
 * status ^short = "Tõendi staatus"
 * status from EEHealthCertificateStatusVS (required)
 * type ^short = "Composition ressursi tüüp. Alati 'Medical Certificate'"
@@ -65,104 +72,43 @@ Description: "Tervisetõend baasprofiil"
 * section[shoretenedReason].code = EEHealthCertificateSection#shortened-reason
 * section[shoretenedReason].text 1..1
 * section[shoretenedReason].text ^short = "Vabatekst lühema tervisekontrolli aja põhjusega"
+* section[shoretenedReason].text.status = #additional
 * section[rejectReason] ^short = "Eitava otsuse põhjendus"
 * section[rejectReason].code = EEHealthCertificateSection#reject-reason
 * section[rejectReason].text 1..1
 * section[rejectReason].text ^short = "Vabatekst eitava otsuse põhjendusega"
+* section[rejectReason].text.status = #additional
 * section[changeReason] ^short = "Tervisetõendi muutmise põhjus"
 * section[changeReason].code = EEHealthCertificateSection#change-reason
 * section[changeReason].text 1..1
 * section[changeReason].text ^short = "Vabatekst tervisetõendi muutmise põhjusega"
+* section[changeReason].text.status = #additional
 * section[cancelReason] ^short = "Tervisetõendi tühistamise põhjus"
 * section[cancelReason].code = EEHealthCertificateSection#cancel-reason
 * section[cancelReason].text 1..1
 * section[suspendReason].text ^short = "Tervisetõendi peatamise põhjus"
+* section[suspendReason].text.status = #additional
 * section[suspendReason] ^short = "Tervisetõendi peatamise põhjus"
 * section[suspendReason].code = EEHealthCertificateSection#suspend-reason
 * section[suspendReason].text 1..1
 * section[suspendReason].text ^short = "Vabatekst tervisetõendi peatamise põhjusega"
-// contained resources
-* contained ^slicing.discriminator.type = #type
-* contained ^slicing.discriminator.path = "resource"
+* section[suspendReason].text.status = #additional
+* contained ^slicing.discriminator[0].type = #value
+* contained ^slicing.discriminator[0].path = "code"
+* contained ^slicing.ordered = false
 * contained ^slicing.rules = #open
 * contained contains author 1..1 and decision 0..1
 * contained[author] only PractitionerRole
 * contained[author] ^short = "Tervisetõendi autor"
+* contained[author].code = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * contained[author].practitioner 1..1
 * contained[author].practitioner ^short = "Viide SPD Practitioner ressursile"
 * contained[author].organization 1..1
 * contained[author].organization ^short = "Viide SPD Organization ressursile"
-* contained[decision] only Observation
+* contained[decision] only HcertObservation
 * contained[decision] ^short = "Tervisetõendi otsus"
-// following breaks the build due to bug in the IG publisher
-//* contained[Observation].code = http://snomed.info/sct#419183001 "Practitioner decision status" (exactly)
-//* contained[Observation].valueCodeableConcept 1..1
-//* contained[Observation].valueCodeableConcept ^short = "Otsus"
-//* contained[Observation].valueCodeableConcept from EEHealthCertificateDecision (required)
-
-
-Profile: EEHealthCertificateOccupational
-Parent: EEHealthCertificate
-Id: ee-health-certificate-occupational
-Title: "Töötervishoiu tervisetõend"
-Description: "Töötervishoiu tervisetõendi baasprofiil"
-* ^experimental = true
-* section contains riskFactors 0..* and employer 0..1 and healthDeclaration 0..1 and additionalConditions 0..* and employerSuggestions 0..1 and employeeSuggestions 0..1
-* section[riskFactors] ^short = "Ohutegurid"
-* section[riskFactors].code = EEHealthCertificateSection#risk-factors
-* section[riskFactors].entry 1..1
-* section[riskFactors].entry only Reference(Observation)
-* section[riskFactors].entry ^short = "Viide contained Observation ressursile ohuteguriga"
-* section[employer] 1..1
-* section[employer] ^short = "Tööandja"
-* section[employer].code = EEHealthCertificateSection#employer
-* section[employer].entry 1..1
-* section[employer].entry only Reference(Observation)
-* section[employer].entry ^short = "Viide contained Observation ressursile töösuhega"
-* section[employer].text 1..1
-* section[employer].text ^short = "Tööandja asutuse registri number"
-* section[healthDeclaration] 0..1 MS
-* section[healthDeclaration] ^short = "Tervisedeklaratsioon"
-* section[healthDeclaration].code = EEHealthCertificateSection#health-declaration
-* section[healthDeclaration].entry 1..1
-* section[healthDeclaration].entry only Reference(QuestionnaireResponse)
-* section[healthDeclaration].entry ^short = "Viide QuestionnaireResponse ressursile"
-* section[healthDeclaration].text 1..1
-* section[healthDeclaration].text ^short = "Vabatekst"
-* section[additionalConditions] ^short = "Lisatingimused"
-* section[additionalConditions].code = EEHealthCertificateSection#additional-conditions
-* section[additionalConditions].entry 1..1
-* section[additionalConditions].entry only Reference(Observation)
-* section[additionalConditions].entry ^short = "Viide contained Observation ressursile lisatingimusega"
-* section[additionalConditions].text 1..1
-* section[additionalConditions].text ^short = "Vabatekst"
-* section[employerSuggestions] ^short = "Ettepanekud tööandjale"
-* section[employerSuggestions].code = EEHealthCertificateSection#employer-suggestions
-* section[employerSuggestions].entry 1..1
-* section[employerSuggestions].text 1..1
-* section[employerSuggestions].text ^short = "Vabatekst"
-* section[employeeSuggestions] ^short = "Ettepanekud töötajale"
-* section[employeeSuggestions].code = EEHealthCertificateSection#employee-suggestions
-* section[employeeSuggestions].entry 1..1
-* section[employeeSuggestions].text 1..1
-* section[employeeSuggestions].text ^short = "Vabatekst"
-* contained contains riskFactor 0..* and employment 1..1 and medicalRestriction 0..* and additionalCondition 0..*
-* contained[riskFactor] only Observation
-* contained[riskFactor] ^short = "Ohutegur"
-* contained[employment] only Observation
-* contained[employment] ^short = "Töösuhe"
-* contained[medicalRestriction] only Observation
-* contained[medicalRestriction] ^short = "Meditsiinilised piirang"
-//fixme add code and node whe ig publisher is fixed
-* contained[additionalCondition] only Observation
-* contained[additionalCondition] ^short = "Lisatingimus"
-
-Profile: EEHealthCertificateOccupationalEmployer
-Parent: EEHealthCertificateOccupational
-Id: ee-health-certificate-occupational-employer
-Title: "Töötervishoiu tervisetõend tööandjale"
-Description: "Töötervishoiu tervisetõendi profiil tööandjale kuvamiseks"
-* ^experimental = true
-* extension[confidentiality] ..0
-* section[healthDeclaration] ..0
-* section[employeeSuggestions] ..0
+* contained[decision].code = http://snomed.info/sct#419183001 "Practitioner decision status"
+* contained[decision].value[x] 1..1
+* contained[decision].value[x] only CodeableConcept
+* contained[decision].value[x] ^short = "Otsus"
+* contained[decision].value[x] from EEHealthCertificateDecisionVS (required)
