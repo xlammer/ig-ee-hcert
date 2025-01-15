@@ -58,6 +58,7 @@ Id: ee-health-certificate-decision
 Title: "Tervisetõendi otsus"
 * ^experimental = false
 * ^caseSensitive = false
+//fixme: sõnastus
 * #yes "Jah"
 * #yes-with-restrictions "Jah, piirangutega"
 * #no "Ei"
@@ -67,3 +68,38 @@ Id: ee-health-certificate-decision
 Title: "Tervisetõendi otsus"
 * ^experimental = false
 * include codes from system EEHealthCertificateDecision
+
+CodeSystem: EEHealthCertificateMedicalRestriction
+Id: ee-health-certificate-medical-restriction
+Title: "Tervisetõendi meditsiiniline piirang"
+Description: "Poolik nimekiri piirangutest"
+* ^experimental = false
+* ^caseSensitive = false
+* #glasses "prillid"
+* #contact-lenses "kontaktläätsed"
+* #sun-shade "päikesevari"
+//fixme: add rest of the concepts
+
+ValueSet: EEHealthCertificateMedicalRestrictionVS
+Id: ee-health-certificate-medical-restriction
+Title: "Tervisetõendi meditsiiniline piirang"
+* ^experimental = false
+* include codes from system EEHealthCertificateMedicalRestriction
+
+
+CodeSystem: EEHealthCertificateOccupationalAdditionalCondition
+Id: ee-health-certificate-occupational-additional-condition
+Title: "Püsiva töövõime säilitamiseks vajalikud lisatingimus"
+* ^experimental = false
+* ^caseSensitive = false
+* #safety-gear "Isikukaitsevahendid"
+* #work-related-changes "Töökorralduslikud muudatused"
+* #work-environment "Töökeskkond"
+* #other "Muu"
+
+
+ValueSet: EEHealthCertificateOccupationalAdditionalConditionVS
+Id: ee-health-certificate-occupational-additional-condition
+Title: "Püsiva töövõime säilitamiseks vajalikud lisatingimus"
+* ^experimental = false
+* include codes from system EEHealthCertificateOccupationalAdditionalCondition

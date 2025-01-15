@@ -25,10 +25,7 @@ Description: "Töötervishoiu tervisetõendi baasprofiil"
 * section[healthDeclaration].entry 1..1
 * section[healthDeclaration].entry only Reference(QuestionnaireResponse)
 * section[healthDeclaration].entry ^short = "Viide QuestionnaireResponse ressursile"
-* section[healthDeclaration].text 1..1
-* section[healthDeclaration].text ^short = "Vabatekst"
-* section[healthDeclaration].text.status = #additional
-* section[additionalConditions] ^short = "Lisatingimused"
+* section[additionalConditions] ^short = "Püsiva töövõime säilitamiseks vajalikud lisatingimused"
 * section[additionalConditions].code = EEHealthCertificateSection#additional-conditions
 * section[additionalConditions].entry 1..1
 * section[additionalConditions].entry only Reference(Observation)
@@ -38,29 +35,31 @@ Description: "Töötervishoiu tervisetõendi baasprofiil"
 * section[additionalConditions].text.status = #additional
 * section[employerSuggestions] ^short = "Ettepanekud tööandjale"
 * section[employerSuggestions].code = EEHealthCertificateSection#employer-suggestions
-* section[employerSuggestions].entry 1..1
 * section[employerSuggestions].text 1..1
 * section[employerSuggestions].text ^short = "Vabatekst"
 * section[employerSuggestions].text.status = #additional
 * section[employeeSuggestions] ^short = "Ettepanekud töötajale"
 * section[employeeSuggestions].code = EEHealthCertificateSection#employee-suggestions
-* section[employeeSuggestions].entry 1..1
 * section[employeeSuggestions].text 1..1
 * section[employeeSuggestions].text ^short = "Vabatekst"
 * section[employeeSuggestions].text.status = #additional
-* contained contains riskFactor 0..* and employment 0..1 and medicalRestriction 0..* and additionalCondition 0..*
+* contained contains riskFactor 0..* and employment 0..1 and additionalCondition 0..*
 * contained[riskFactor] only HcertObservation
 * contained[riskFactor] ^short = "Ohutegur"
 * contained[riskFactor].code = http://snomed.info/sct#80943009 "Risk factor"
+* contained[riskFactor].value[x] 1..1
+* contained[riskFactor].value[x] only CodeableConcept
+* contained[riskFactor].value[x] ^short = "Tööst olenev ohutegur"
+* contained[riskFactor].value[x] from https://fhir.ee/ValueSet/toost-olenevad-ohutegurid (required)
 * contained[employment] only HcertObservation
 * contained[employment] ^short = "Töösuhe"
 * contained[employment].code = http://snomed.info/sct#364703007 "Employment detail"
-* contained[medicalRestriction] only HcertObservation
-* contained[medicalRestriction] ^short = "Meditsiinilised piirang"
-* contained[medicalRestriction].code = http://snomed.info/sct#225891002 "Fit for work with restrictions"
 * contained[additionalCondition] only HcertObservation
-* contained[additionalCondition] ^short = "Lisatingimus"
-* contained[additionalCondition].code = http://snomed.info/sct#260905004 "Condition"
+* contained[additionalCondition] ^short = "Püsiva töövõime säilitamiseks vajalikud lisatingimused"
+* contained[additionalCondition].code = http://snomed.info/sct#225891002 "Fit for work with certain limitations"
+* contained[additionalCondition].value[x] 1..1
+* contained[additionalCondition].value[x] only CodeableConcept
+* contained[additionalCondition].value[x] from EEHealthCertificateOccupationalAdditionalConditionVS (required)
 
 Profile: EEHealthCertificateOccupationalEmployer
 Parent: EEHealthCertificateOccupational

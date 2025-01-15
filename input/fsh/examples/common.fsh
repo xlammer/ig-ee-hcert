@@ -16,7 +16,7 @@ Title: "Arsti näidis"
 * name.family = "Arst"
 * name.given = "Paavo"
 
-Instance: Pat1
+Instance: Patient
 InstanceOf: Patient
 Usage: #example
 Title: "Patsiendi näidis"
@@ -24,3 +24,12 @@ Title: "Patsiendi näidis"
 * name
   * given = "Taavi"
   * family = "Kask"
+
+Instance: HealthDeclaration
+InstanceOf: QuestionnaireResponse
+Usage: #example
+Title: "Küsimustiku vastuse näidis"
+* id = "qre-200"
+* status = #completed
+* questionnaire = "urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b"
+* subject = Reference(Patient/pat1)

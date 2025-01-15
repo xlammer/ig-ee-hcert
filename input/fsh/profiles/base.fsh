@@ -1,7 +1,7 @@
 Profile: HcertObservation
 Parent: Observation
 Title: "Temporary observation profile"
-Description: "Remove this profile when https://github.com/HL7/fhir-ig-publisher/issues/1018 is fixed an new IG publisher is released"
+Description: "Remove this profile when https://github.com/HL7/fhir-ig-publisher/issues/1018 is fixed and new IG publisher is released"
 * referenceRange 0..0
 
 Extension: EEHealthCertificateConfidentialityExt
@@ -57,7 +57,7 @@ Description: "Tervisetõend baasprofiil"
 * section ^slicing.discriminator.path = #code
 * section ^slicing.rules = #open
 * section ^slicing.description = "Slice based on the section.code value"
-* section contains decision 0..1 and medicalRestriction 0..* and shoretenedReason 0..1 and rejectReason 0..1 and changeReason 0..1 and cancelReason 0..1 and suspendReason 0..1
+* section contains decision 0..1 and medicalRestriction 0..* and shortenedReason 0..1 and rejectReason 0..1 and changeReason 0..1 and cancelReason 0..1 and suspendReason 0..1
 * section[decision] ^short = "Tervisetõendi otsus"
 * section[decision].code = EEHealthCertificateSection#decision
 * section[decision].entry 1..1
@@ -68,11 +68,11 @@ Description: "Tervisetõend baasprofiil"
 * section[medicalRestriction].entry 1..1
 * section[medicalRestriction].entry only Reference(Observation)
 * section[medicalRestriction].entry ^short = "Viide contained Observation ressursile (Meditsiiniline piirang)"
-* section[shoretenedReason] ^short = "Lühema tervisekontrolli aja põhjus"
-* section[shoretenedReason].code = EEHealthCertificateSection#shortened-reason
-* section[shoretenedReason].text 1..1
-* section[shoretenedReason].text ^short = "Vabatekst lühema tervisekontrolli aja põhjusega"
-* section[shoretenedReason].text.status = #additional
+* section[shortenedReason] ^short = "Lühema tervisekontrolli aja põhjus"
+* section[shortenedReason].code = EEHealthCertificateSection#shortened-reason
+* section[shortenedReason].text 1..1
+* section[shortenedReason].text ^short = "Vabatekst lühema tervisekontrolli aja põhjusega"
+* section[shortenedReason].text.status = #additional
 * section[rejectReason] ^short = "Eitava otsuse põhjendus"
 * section[rejectReason].code = EEHealthCertificateSection#reject-reason
 * section[rejectReason].text 1..1
@@ -97,7 +97,7 @@ Description: "Tervisetõend baasprofiil"
 * contained ^slicing.discriminator[0].path = "code"
 * contained ^slicing.ordered = false
 * contained ^slicing.rules = #open
-* contained contains author 1..1 and decision 0..1
+* contained contains author 1..1 and decision 0..1 and medicalRestriction 0..*
 * contained[author] only PractitionerRole
 * contained[author] ^short = "Tervisetõendi autor"
 * contained[author].code = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
@@ -112,3 +112,12 @@ Description: "Tervisetõend baasprofiil"
 * contained[decision].value[x] only CodeableConcept
 * contained[decision].value[x] ^short = "Otsus"
 * contained[decision].value[x] from EEHealthCertificateDecisionVS (required)
+* contained[medicalRestriction] only HcertObservation
+* contained[medicalRestriction] ^short = "Meditsiiniline piirang"
+* contained[medicalRestriction].code = http://snomed.info/sct#246175000 "Limitation"
+* contained[medicalRestriction].value[x] 1..1
+* contained[medicalRestriction].value[x] only CodeableConcept
+* contained[medicalRestriction].value[x] ^short = "Meditsiinilised piirang"
+* contained[medicalRestriction].value[x] from EEHealthCertificateMedicalRestrictionVS (required)
+* contained[medicalRestriction].note 0..1 MS
+* contained[medicalRestriction].note ^short = "Kommentaar"
