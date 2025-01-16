@@ -18,7 +18,6 @@ Usage: #inline
   * code[0] = http://snomed.info/sct#160922003 "Job details"
   * valueCodeableConcept[0] = https://fhir.ee/CodeSystem/occupation#75130001 "Võimeister"
 
-
 Instance: Decision
 InstanceOf: HcertObservation
 Usage: #inline
@@ -123,7 +122,7 @@ Usage: #example
   * code = EEHealthCertificateSection#health-declaration
   * entry = Reference(QuestionnaireResponse/qre-200)
 * section[additionalConditions]
-  * code = EEHealthCertificateSection#additional-conditions
+  * code = EEHealthCertificateSection#work-additional-conditions
   * entry = Reference(AdditionalCondition)
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tekst mis kirjeldab lisatingumusi</div>"

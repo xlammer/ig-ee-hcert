@@ -44,11 +44,11 @@ Title: "Tervisetõendi sektsioon"
 * #change-reason "Tervisetõendi muutmise põhjus"
 * #cancel-reason "Tervisetõendi tühistamise põhjus"
 * #suspend-reason "Tervisetõendi peatamise põhjus"
-* #risk-factors "Ohutegurid"
+* #risk-factors "Tööst olenevad ohutegurid"
 * #employer "Tööandja"
 * #health-declaration "Tervisedeklaratsioon"
 * #medical-restrictions "Meditsiinilised piirangud"
-* #additional-conditions "Lisatingimused"
+* #work-additional-conditions "Püsiva töövõime säilitamiseks vajalikud lisatingimused"
 * #employer-suggestions "Ettepanekud tööandjale"
 * #employee-suggestions "Ettepanekud töötajale"
 * #work-related-condition "Tööst põhjustatud haigestumine ja/või kutsehaigestumine"
@@ -58,10 +58,9 @@ Id: ee-health-certificate-decision
 Title: "Tervisetõendi otsus"
 * ^experimental = false
 * ^caseSensitive = false
-//fixme: sõnastus
-* #yes "Jah"
-* #yes-with-restrictions "Jah, piirangutega"
-* #no "Ei"
+* #yes "Soobib"
+* #yes-with-restrictions "Soobib piirangutega"
+* #no "Ei sobi"
 
 ValueSet: EEHealthCertificateDecisionVS
 Id: ee-health-certificate-decision
