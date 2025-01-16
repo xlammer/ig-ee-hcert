@@ -21,17 +21,6 @@ Title: "Tervisetõendi kasutusala"
 * ^experimental = false
 * include codes from system EEHealthCertificateUsageArea
 
-CodeSystem: EEHealthCertificateConfidentiality
-Id: ee-health-certificate-confidentiality
-Title: "Tervisetõendi konfidentsiaalsus"
-* ^experimental = false
-* ^caseSensitive = false
-* #tbd "TBD"
-
-ValueSet: EEHealthCertificateConfidentialityVS
-Title: "Tervisetõendi konfidentsiaalsus"
-* ^experimental = false
-* include codes from system EEHealthCertificateConfidentiality
 
 CodeSystem: EEHealthCertificateSection
 Id: ee-health-certificate-section

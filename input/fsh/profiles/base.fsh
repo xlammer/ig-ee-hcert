@@ -4,15 +4,14 @@ Title: "Temporary observation profile"
 Description: "Remove this profile when https://github.com/HL7/fhir-ig-publisher/issues/1018 is fixed and new IG publisher is released"
 * referenceRange 0..0
 
-Extension: EEHealthCertificateConfidentialityExt
-Id: ee-health-certificate-confidentiality
-Title: "Tervisetõendi konfidentsiaalsus"
+Extension: EEHealthCertificateConfidentialityGuardianExt
+Id: ee-health-certificate-confidentiality-guardian
+Title: "Tervisetõendi konfidentsiaalsus eestkostjale"
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Composition"
-* . ^short = "Tervisetõendi konfidentsiaalsus"
 * value[x] only Coding
-* value[x] from EEHealthCertificateConfidentialityVS
+* value[x] from https://fhir.ee/ValueSet/konfidentsiaalsus-eestkostjale
 * value[x].code 1..1
 
 Profile: EEHealthCertificate
@@ -51,7 +50,7 @@ Description: "Tervisetõend baasprofiil"
 * event.period ^short = "Dokumendi kehtivus - algus- ja lõpuaeg"
 * event.period 1..1
 * event.detail ..0
-* extension contains EEHealthCertificateConfidentialityExt named confidentiality 0..1 MS
+* extension contains EEHealthCertificateConfidentialityGuardianExt named guardianConfidentiality 0..1 MS
 // sections
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = #code

@@ -66,6 +66,6 @@ Id: ee-health-certificate-occupational-employer
 Title: "Töötervishoiu tervisetõend tööandjale"
 Description: "Töötervishoiu tervisetõendi profiil tööandjale kuvamiseks"
 * ^experimental = true
-* extension[confidentiality] ..0
+* extension[guardianConfidentiality] ..0
 * section[healthDeclaration] ..0
 * section[employeeSuggestions] ..0

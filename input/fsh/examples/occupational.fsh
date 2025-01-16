@@ -77,7 +77,7 @@ Usage: #example
 * title = "Töötervishoiu tervisekontroll"
 * event.period.start = "2024-11-05T00:00:00.000+00:00"
 * event.period.end = "2025-11-05T00:00:00.000+00:00"
-// fixme add confidentiality
+* extension[guardianConfidentiality].valueCoding = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
 * contained[author] = Author
 * contained[+] = Employment
 * contained[+] = Decision
