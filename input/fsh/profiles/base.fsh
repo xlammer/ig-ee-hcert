@@ -1,25 +1,16 @@
 Profile: HcertObservation
 Parent: Observation
-Title: "Temporary observation profile"
+Title: "Temporary Observation"
 Description: "Remove this profile when https://github.com/HL7/fhir-ig-publisher/issues/1018 is fixed and new IG publisher is released"
 * referenceRange 0..0
-
-Extension: EEHealthCertificateConfidentialityGuardianExt
-Id: ee-health-certificate-confidentiality-guardian
-Title: "Tervisetõendi konfidentsiaalsus eestkostjale"
-* ^status = #draft
-* ^context.type = #element
-* ^context.expression = "Composition"
-* value[x] only Coding
-* value[x] from https://fhir.ee/ValueSet/konfidentsiaalsus-eestkostjale
-* value[x].code 1..1
 
 Profile: EEHealthCertificate
 Parent: Composition
 Id: ee-health-certificate
 Title: "Tervisetõend"
-Description: "Tervisetõend baasprofiil"
+Description: "Tervisetõendi baasprofiil"
 * ^experimental = true
+* ^abstract = true
 * url ..0
 * identifier 1..1
 * identifier ^short = "Dokumendi number"
@@ -50,7 +41,6 @@ Description: "Tervisetõend baasprofiil"
 * event.period ^short = "Dokumendi kehtivus - algus- ja lõpuaeg"
 * event.period 1..1
 * event.detail ..0
-* extension contains EEHealthCertificateConfidentialityGuardianExt named guardianConfidentiality 0..1 MS
 // sections
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = #code
@@ -116,7 +106,7 @@ Description: "Tervisetõend baasprofiil"
 * contained[medicalRestriction].code = http://snomed.info/sct#246175000 "Limitation"
 * contained[medicalRestriction].value[x] 1..1
 * contained[medicalRestriction].value[x] only CodeableConcept
-* contained[medicalRestriction].value[x] ^short = "Meditsiinilised piirang"
+* contained[medicalRestriction].value[x] ^short = "Meditsiiniline piirang"
 * contained[medicalRestriction].value[x] from EEHealthCertificateMedicalRestrictionVS (required)
 * contained[medicalRestriction].note 0..1 MS
-* contained[medicalRestriction].note ^short = "Kommentaar"
+* contained[medicalRestriction].note ^short = "Kommentaar koos piirangu täpsustusega"

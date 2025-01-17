@@ -4,6 +4,7 @@ Id: ee-health-certificate-occupational
 Title: "Töötervishoiu tervisetõend"
 Description: "Töötervishoiu tervisetõendi baasprofiil"
 * ^experimental = true
+* category = EEHealthCertificateUsageArea#occupational
 * section contains riskFactors 0..* and employer 0..1 and healthDeclaration 0..1 and additionalConditions 0..* and employerSuggestions 0..1 and employeeSuggestions 0..1
 * section[riskFactors] ^short = "Tööst olenevad ohutegurid"
 * section[riskFactors].code = EEHealthCertificateSection#risk-factors
@@ -44,6 +45,7 @@ Description: "Töötervishoiu tervisetõendi baasprofiil"
 * section[employeeSuggestions].text ^short = "Vabatekst"
 * section[employeeSuggestions].text.status = #additional
 * contained contains riskFactor 0..* and employment 0..1 and additionalCondition 0..*
+* contained[medicalRestriction].value[x] from EEHealthCertificateOccupationalMedicalRestrictionVS (required)
 * contained[riskFactor] only HcertObservation
 * contained[riskFactor] ^short = "Tööst olenevad ohutegurid"
 * contained[riskFactor].code = http://snomed.info/sct#80943009 "Risk factor"
@@ -66,6 +68,5 @@ Id: ee-health-certificate-occupational-employer
 Title: "Töötervishoiu tervisetõend tööandjale"
 Description: "Töötervishoiu tervisetõendi profiil tööandjale kuvamiseks"
 * ^experimental = true
-* extension[guardianConfidentiality] ..0
 * section[healthDeclaration] ..0
 * section[employeeSuggestions] ..0

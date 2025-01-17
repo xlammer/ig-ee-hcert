@@ -4,15 +4,10 @@ Baasprofiil *[EEHealthCertificate](StructureDefinition-ee-health-certificate.htm
 profiilide poolt.
 Baasprofiil loetleb ühised reeglid ja määrab ressursi struktuuri kõikide sertifikaati tüüpide kohta.
 
-Baasprofiiliga saab kirjeldada ka järgmised tõendid:
-1. Mootorsõiduki juhtimise tõend
-1. Relvaloa tervisetõend
-1. Muud tervisetõendid
-
-
 ```mermaid
 graph TD
     EEHealthCertificate -->|päritud| EEHealthCertificateOccupational
+    EEHealthCertificate -->|päritud| EEHealthCertificateDriver
     EEHealthCertificateOccupational -->|Tööandjale| EEHealthCertificateOccupationalEmployer
 ```
 
@@ -20,3 +15,6 @@ graph TD
 
 *[EEHealthCertificateOccupational](StructureDefinition-ee-health-certificate-occupational.html)* on tervishoiu tervisetõendite baasprofiil. Mõeldud spetsialistidele (sh arstidele) ja töötajale andmete kuvamiseks.
 Selle alamprofiil [EEHealthCertificateOccupationalEmployer](StructureDefinition-ee-health-certificate-occupational-employer.html)  on mõeldud tööandjale andmete väljastamiseks.
+
+### Mootorsõidukijuhi tervisetõend
+*[EEHealthCertificateDriver](StructureDefinition-ee-health-certificate-driver.html)* on mootorsõidukijuhi tervisetõendi profiil.

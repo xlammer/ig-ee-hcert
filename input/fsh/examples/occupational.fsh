@@ -36,7 +36,7 @@ Usage: #inline
 * code = http://snomed.info/sct#246175000 "Limitation"
 * subject = Reference(Patient/pat1)
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
-* valueCodeableConcept = EEHealthCertificateMedicalRestriction#glasses
+* valueCodeableConcept = EEHealthCertificateRestriction#glasses
 * note.text = "Töötamiseks vajab prille kaitseklaasidega"
 
 Instance: RiskFactor
@@ -70,14 +70,12 @@ Usage: #example
   * value = "DOC-12345"
 * status = http://hl7.org/fhir/composition-status#preliminary
 * type = http://snomed.info/sct#772786005 "Medical Certificate"
-* category = EEHealthCertificateUsageArea#occupational
 * subject = Reference(Patient/pat1)
 * date = "2024-11-05T11:45:29.0437162+00:00"
 * author = Reference(Author)
 * title = "Töötervishoiu tervisekontroll"
 * event.period.start = "2024-11-05T00:00:00.000+00:00"
 * event.period.end = "2025-11-05T00:00:00.000+00:00"
-* extension[guardianConfidentiality].valueCoding = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
 * contained[author] = Author
 * contained[+] = Employment
 * contained[+] = Decision

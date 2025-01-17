@@ -9,23 +9,21 @@ Usage: #inline
 * valueCodeableConcept = EEHealthCertificateDecision#no
 
 Instance: DriverHealthCertExample
-InstanceOf: EEHealthCertificate
+InstanceOf: EEHealthCertificateDriver
 Title: "Mootorsõiduki juhtimise tervisetõendi näidis"
 Usage: #example
 * id = "section-300"
 * identifier[0]
   * system = "https://fhir.ee/hcert/health-certificate-number"
-  * value = "DOC-321"
+  * value = "HCERT-321"
 * status = http://hl7.org/fhir/composition-status#final
 * type = http://snomed.info/sct#772786005 "Medical Certificate"
-* category = EEHealthCertificateUsageArea#driver
 * subject = Reference(Patient/pat1)
 * date = "2024-11-05T11:45:29.0437162+00:00"
 * author = Reference(Author)
 * title = "Mootorsõiduki juhtimise tervisetõend"
 * event.period.start = "2024-11-05T00:00:00.000+00:00"
 * event.period.end = "2025-11-05T00:00:00.000+00:00"
-* extension[guardianConfidentiality].valueCoding = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#V
 * contained[author] = Author
 * contained[+] = DecisionDriver
 * section[decision]
