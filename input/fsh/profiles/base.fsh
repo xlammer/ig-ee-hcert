@@ -107,6 +107,5 @@ Description: "Tervisetõendi baasprofiil"
 * contained[medicalRestriction].value[x] 1..1
 * contained[medicalRestriction].value[x] only CodeableConcept
 * contained[medicalRestriction].value[x] ^short = "Meditsiiniline piirang"
-* contained[medicalRestriction].value[x] from EEHealthCertificateMedicalRestrictionVS (required)
 * contained[medicalRestriction].note 0..1 MS
 * contained[medicalRestriction].note ^short = "Kommentaar koos piirangu täpsustusega"

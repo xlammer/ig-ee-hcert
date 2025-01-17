@@ -36,8 +36,8 @@ Usage: #inline
 * code = http://snomed.info/sct#246175000 "Limitation"
 * subject = Reference(Patient/pat1)
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
-* valueCodeableConcept = EEHealthCertificateRestriction#glasses
-* note.text = "Töötamiseks vajab prille kaitseklaasidega"
+* valueCodeableConcept = EEHealthCertificateRestriction#no-night-work
+* note.text = "Öösel võib hulluks minna"
 
 Instance: RiskFactor
 InstanceOf: HcertObservation
