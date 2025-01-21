@@ -18,7 +18,7 @@ Title: "Tervisetõendi kasutusala"
 * ^experimental = false
 * ^caseSensitive = false
 * #occupational "Töötervishoiu tervisekontroll"
-* #driver "Mootorsõidukijuhi tervisetõend"
+* #driver "Mootorsõidukijuhi tervisekontroll"
 * #diver "Tuukrite tervisekontroll"
 * #blaster "Lõhkaja, lõhkemeistri ja pürotehniku tervisekontroll"
 * #railway "Raudteetöötaja tervisekontroll"
@@ -32,7 +32,7 @@ Title: "Tervisetõendi kasutusala"
 * #rescue "Päästeteenistujate tervisekontroll"
 * #volunteer-rescue "Vabatahtliku merepäästja, päästja ja abidemineerija tervisekontroll"
 * #volunteer-police "Abipolitseiniku ja abipolitseinikuks astuda soovija tervisekontroll"
-* #military "Kaitseväeteenistuse tervisetõend"
+* #military "Kaitseväeteenistuse Tervisekontroll"
 
 ValueSet: EEHealthCertificateUsageAreaVS
 Id: ee-health-certificate-usage-area
@@ -115,7 +115,7 @@ Description: "Kõik piirangud"
 
 ValueSet: EEHealthCertificateDriverMedicalRestrictionVS
 Id: ee-health-certificate-driver-medical-restriction
-Title: "Tervisetõendi meditsiiniline piirang mootorsõiduki juhtimiseks"
+Title: "Mootosõidukijuhi tervisetõendi meditsiiniline piirang"
 Description: "Piirangud mootorsõiduki juhtimiseks"
 * ^experimental = false
 * include EEHealthCertificateRestriction#glasses
@@ -152,7 +152,7 @@ Description: "Piirangud töötamiseks"
 
 CodeSystem: EEHealthCertificateOccupationalAdditionalCondition
 Id: ee-health-certificate-occupational-additional-condition
-Title: "Püsiva töövõime säilitamiseks vajalikud lisatingimus"
+Title: "Püsiva töövõime säilitamiseks vajalik lisatingimus"
 * ^experimental = false
 * ^caseSensitive = false
 * #safety-gear "Isikukaitsevahendid"
@@ -162,6 +162,6 @@ Title: "Püsiva töövõime säilitamiseks vajalikud lisatingimus"
 
 ValueSet: EEHealthCertificateOccupationalAdditionalConditionVS
 Id: ee-health-certificate-occupational-additional-condition
-Title: "Püsiva töövõime säilitamiseks vajalikud lisatingimus"
+Title: "Püsiva töövõime säilitamiseks vajalik lisatingimus"
 * ^experimental = false
 * include codes from system EEHealthCertificateOccupationalAdditionalCondition
