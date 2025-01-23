@@ -58,7 +58,6 @@ Title: "Tervisetõendi sektsioon"
 * #work-additional-conditions "Püsiva töövõime säilitamiseks vajalikud lisatingimused"
 * #employer-suggestions "Ettepanekud tööandjale"
 * #employee-suggestions "Ettepanekud töötajale"
-* #work-related-condition "Tööst põhjustatud haigestumine ja/või kutsehaigestumine"
 
 CodeSystem: EEHealthCertificateDecision
 Id: ee-health-certificate-decision
