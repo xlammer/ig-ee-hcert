@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="section-300"/>
+  <meta>
+    <profile value="https://fhir.ee/hcert/StructureDefinition/ee-health-certificate-driver"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition section-300</b></p><a name="section-300"> </a><a name="hcsection-300"> </a><a name="section-300-en-US"> </a><p><b>identifier</b>: <code>https://fhir.ee/hcert/health-certificate-number</code>/HCERT-321</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 772786005}">Medical Certificate</span></p><p><b>category</b>: <span title="Codes:{https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area driver}">Mootorsõidukijuhi tervisekontroll</span></p><p><b>date</b>: 2024-11-05 11:45:29+0000</p><p><b>author</b>: <a href="#hcsection-300/author-200">PractitionerRole Doctor</a></p><p><b>title</b>: Mootorsõiduki juhtimise tervisetõend</p><h3>Events</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td>2024-11-05 00:00:00+0000 --&gt; 2025-11-05 00:00:00+0000</td></tr></table><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole #author-200</b></p><a name="section-300/author-200"> </a><a name="hcsection-300/author-200"> </a><a name="section-300/author-200-en-US"> </a><p><b>practitioner</b>: <a href="Practitioner-pract1.html">Practitioner Paavo Arst </a></p><p><b>organization</b>: <a href="Organization-org1.html">Organization Karulaugu Perearstikeskus</a></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/practitioner-role doctor}">Doctor</span></p></blockquote><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Observation #decision-222</b></p><a name="section-300/decision-222"> </a><a name="hcsection-300/decision-222"> </a><a name="section-300/decision-222-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 419183001}">Practitioner decision status</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Taavi Kask  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2013-04-02 09:30:10+0100</p><p><b>value</b>: <span title="Codes:{https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision no}">Ei sobi</span></p></blockquote></div>
+  </text>
+  <contained>
+    <PractitionerRole>
+      <id value="author-200"/>
+      <practitioner>
+        <reference value="Practitioner/pract1"/>
+      </practitioner>
+      <organization>
+        <reference value="Organization/org1"/>
+      </organization>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/practitioner-role"/>
+          <code value="doctor"/>
+          <display value="Doctor"/>
+        </coding>
+      </code>
+    </PractitionerRole>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="decision-222"/>
+      <meta>
+        <profile value="https://fhir.ee/hcert/StructureDefinition/HcertObservation"/>
+      </meta>
+      <status value="final"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="419183001"/>
+          <display value="Practitioner decision status"/>
+        </coding>
+      </code>
+      <subject>
+        <reference value="Patient/pat1"/>
+      </subject>
+      <effectiveDateTime value="2013-04-02T09:30:10+01:00"/>
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"/>
+          <code value="no"/>
+        </coding>
+      </valueCodeableConcept>
+    </Observation>
+  </contained>
+  <identifier>
+    <system value="https://fhir.ee/hcert/health-certificate-number"/>
+    <value value="HCERT-321"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="772786005"/>
+      <display value="Medical Certificate"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+      <code value="driver"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <date value="2024-11-05T11:45:29.0437162+00:00"/>
+  <author>
+    <reference value="#author-200"/>
+  </author>
+  <title value="Mootorsõiduki juhtimise tervisetõend"/>
+  <event>
+    <period>
+      <start value="2024-11-05T00:00:00.000+00:00"/>
+      <end value="2025-11-05T00:00:00.000+00:00"/>
+    </period>
+  </event>
+  <section>
+    <code>
+      <coding>
+        <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section"/>
+        <code value="decision"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="#decision-222"/>
+    </entry>
+  </section>
+  <section>
+    <code>
+      <coding>
+        <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section"/>
+        <code value="reject-reason"/>
+      </coding>
+    </code>
+    <text>
+      <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Ei tunne värve</div>
+    </text>
+  </section>
+</Composition>

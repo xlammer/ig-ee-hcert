@@ -1,0 +1,111 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/ValueSet/toost-olenevad-ohutegurid",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ToostOlenevadOhutegurid",
+      "title" : "Tööst olenevad ohutegurid",
+      "description" : "Rasedakaart - raseda töökohast olenevad ohutegurid: füüsikalised, keemilised, bioloogilised, füsioloogilised ja psüholoogilised, ja kantserogeenset ja mutageenset ohtu põhjustavad tööprotsessid.",
+      "systems" : ["https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid"],
+      "oids" : ["1.3.6.1.4.1.28284.6.2.3.22.1", "1.3.6.1.4.1.28284.6.2.3.22"],
+      "sources" : ["1.3.6.1.4.1.28284.6.2.3.22.1", "1.3.6.1.4.1.28284.6.2.3.22"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-decision",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateDecisionVS",
+      "title" : "Tervisetõendi otsus",
+      "description" : null,
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-driver-medical-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateDriverMedicalRestrictionVS",
+      "title" : "Mootosõidukijuhi tervisetõendi meditsiiniline piirang",
+      "description" : "Piirangud mootorsõiduki juhtimiseks",
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateMedicalRestrictionVS",
+      "title" : "Tervisetõendi meditsiiniline piirang",
+      "description" : "Kõik piirangud",
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+      ]
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateOccupationalAdditionalConditionVS",
+      "title" : "Püsiva töövõime säilitamiseks vajalik lisatingimus",
+      "description" : null,
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateOccupationalMedicalRestrictionVS",
+      "title" : "Töötervishoiu tervisetõendi meditsiiniline piirang",
+      "description" : "Piirangud töötamiseks",
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateStatusVS",
+      "title" : "Tervisetõendi staatus",
+      "description" : null,
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-usage-area",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateUsageAreaVS",
+      "title" : "Tervisetõendi kasutusala",
+      "description" : null,
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    }
+  ]
+}

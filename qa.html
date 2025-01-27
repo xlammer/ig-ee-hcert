@@ -1,0 +1,829 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 32, warn = 29, info = 7-->
+<head>
+  <title>HCERT : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for HCERT</h1>
+ <p>Generated Mon Jan 27 10:01:43 UTC 2025, FHIR version 5.0.0 for ee.fhir.hcert#1.0.0 (canonical = <a href="https://fhir.ee/hcert">https://fhir.ee/hcert</a> (<a href="https://fhir.ee/hcert/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.9</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ee.fhir.hcert, Canonical = https://fhir.ee/hcert</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>Error fetching package-list from https://fhir.ee/hcert: Error parsing JSON source: Unexpected content '<' in json format at Line 1 (path=[null]) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">4 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ee.fhir.hcert</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://fhir.ee/hcert</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r5</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.2.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r5</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.ee.template#0.0.1 -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/observationdefinition.html">ObservationDefinition</a>
+ (30 uses),     <a href="http://hl7.org/fhir/R5/careplan.html">CarePlan</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/devicerequest.html">DeviceRequest</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/nutritionorder.html">NutritionOrder</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/servicerequest.html">ServiceRequest</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/medicationdispense.html">MedicationDispense</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/medicationstatement.html">MedicationStatement</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/procedure.html">Procedure</a>
+ (30 uses),     <a href="http://hl7.org/fhir/R5/immunization.html">Immunization</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/imagingstudy.html">ImagingStudy</a>
+ (30 uses),     <a href="http://hl7.org/fhir/R5/genomicstudy.html">GenomicStudy</a>
+ (30 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-codes.html">LOINCCodes</a>
+ (30 uses),     <a href="http://hl7.org/fhir/R5/group.html">Group</a>
+ (30 uses),     <a href="http://hl7.org/fhir/R5/device.html">Device</a>
+ (74 uses),     <a href="http://hl7.org/fhir/R5/location.html">Location</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+ (90 uses),     <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a>
+ (82 uses),     <a href="http://hl7.org/fhir/R5/medication.html">Medication</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/substance.html">Substance</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/biologicallyderivedproduct.html">BiologicallyDerivedProduct</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/nutritionproduct.html">NutritionProduct</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/encounter.html">Encounter</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>
+ (68 uses),     <a href="http://hl7.org/fhir/R5/careteam.html">CareTeam</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a>
+ (63 uses),     <a href="http://hl7.org/fhir/R5/molecularsequence.html">MolecularSequence</a>
+ (48 uses),     <a href="http://hl7.org/fhir/R5/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/bodystructure.html">BodyStructure</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-methods.html">ObservationMethods</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/specimen.html">Specimen</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/devicemetric.html">DeviceMetric</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-referencerange-normalvalue.html">ObservationReferenceRangeNormalValueCodes</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/questionnaireresponse.html">QuestionnaireResponse</a>
+ (33 uses),     <a href="http://hl7.org/fhir/R5/documentreference.html">DocumentReference</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/imagingselection.html">ImagingSelection</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/valueset-practitioner-role.html">PractitionerRole</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-c80-practice-codes.html">PracticeSettingCodeValueSet</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/healthcareservice.html">HealthcareService</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-service-mode.html">ServiceMode</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/endpoint.html">Endpoint</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-doc-typecodes.html">FHIRDocumentTypeCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-composition-attestation-mode.html">CompositionAttestationMode</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/composition.html">Composition</a>
+ (133 uses),     <a href="http://hl7.org/fhir/R5/valueset-doc-section-codes.html">DocumentSectionCodes</a>
+ (44 uses),     <a href="http://hl7.org/fhir/R5/valueset-list-order.html">ListOrderCodes</a>
+ (44 uses),     <a href="http://hl7.org/fhir/R5/valueset-list-empty-reason.html">ListEmptyReasons</a>
+ (44 uses),     <a href="http://hl7.org/fhir/R5/valueset-narrative-status.html">NarrativeStatus</a>
+ (24 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r5#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (24 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://fhir.ee/hcert (Problem #1 with package-list.json at https://fhir.ee/hcert: Error parsing JSON source: Unexpected content '<' in json format at Line 1 (path=[null]))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 32, warn = 29, info = 7, broken links = 0.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>15</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-decision"><b>/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-decision</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-occupational-additional-condition"><b>/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-occupational-additional-condition</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-restriction"><b>/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-restriction</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-section"><b>/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-section</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-usage-area"><b>/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-usage-area</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-section-100"><b>/github/workspace/fsh-generated/resources/Composition-section-100</b></a></td><td><b>4</b></td><td><b>6</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-section-300"><b>/github/workspace/fsh-generated/resources/Composition-section-300</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-ee.fhir.hcert"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-ee.fhir.hcert</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_OperationDefinition-ee-health-certificate-pdf"><b>/github/workspace/fsh-generated/resources/OperationDefinition-ee-health-certificate-pdf</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Organization-org1"><b>/github/workspace/fsh-generated/resources/Organization-org1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-pat1"><b>/github/workspace/fsh-generated/resources/Patient-pat1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Practitioner-pract1"><b>/github/workspace/fsh-generated/resources/Practitioner-pract1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_QuestionnaireResponse-qre-200"><b>/github/workspace/fsh-generated/resources/QuestionnaireResponse-qre-200</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-HcertObservation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-HcertObservation</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate-driver"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-driver</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate-occupational"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate-occupational-employer"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-decision"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-decision</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-driver-medical-restriction"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-driver-medical-restriction</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-medical-restriction"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-medical-restriction</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-occupational-additional-condition"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-occupational-additional-condition</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-occupational-medical-restriction"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-occupational-medical-restriction</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-status"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-status</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-usage-area"><b>/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-usage-area</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-occupational-additional-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-usage-area.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-decision.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-occupational-additional-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-usage-area.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-decision.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-section.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/pract1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/qre-200.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/section-300.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/pat1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/section-100.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>IG</b></td><td><b>warning</b></td><td><b>The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-decision"> </a>
+<h2><a href="CodeSystem-ee-health-certificate-decision.html">fsh-generated/resources/CodeSystem-ee-health-certificate-decision.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c1537)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-occupational-additional-condition"> </a>
+<h2><a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html">fsh-generated/resources/CodeSystem-ee-health-certificate-occupational-additional-condition.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c2054)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-restriction"> </a>
+<h2><a href="CodeSystem-ee-health-certificate-restriction.html">fsh-generated/resources/CodeSystem-ee-health-certificate-restriction.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c5462)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-section"> </a>
+<h2><a href="CodeSystem-ee-health-certificate-section.html">fsh-generated/resources/CodeSystem-ee-health-certificate-section.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c3232)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-ee-health-certificate-usage-area"> </a>
+<h2><a href="CodeSystem-ee-health-certificate-usage-area.html">fsh-generated/resources/CodeSystem-ee-health-certificate-usage-area.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.jurisdiction[0] (l1/c3878)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Composition-section-100"> </a>
+<h2><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Composition: Validated against <i>this.</i><a href="StructureDefinition-ee-health-certificate-occupational.html">Töötervishoiu tervisetõend</a></li><li>Composition.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a></li><li>Composition.contained[1]: Validated against <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a> (per meta)</li><li>Composition.contained[2]: Validated against <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a> (per meta)</li><li>Composition.contained[3]: Validated against <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a> (per meta)</li><li>Composition.contained[4]: Validated against <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a> (per meta)</li><li>Composition.contained[5]: Validated against <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[1]&#8203;/*Observation&#8203;/employment-800*&#8203;/ (l55&#8203;/c6)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition&#8203;.contained[1]&#8203;/*Observation&#8203;/employment-800*&#8203;/&#8203;.component[0]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l74&#8203;/c12)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [03abf586-6ad4-447d-9e72-dfd1a70c7f26]: A usable code system with URL https://fhir.ee/CodeSystem/occupation could not be resolved.
+Information: (no details supplied)
+</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[2]&#8203;/*Observation&#8203;/decision-200*&#8203;/ (l100&#8203;/c6)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[3]&#8203;/*Observation&#8203;/restriction-200*&#8203;/ (l131&#8203;/c6)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[4]&#8203;/*Observation&#8203;/riskFactor-200*&#8203;/ (l167&#8203;/c6)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition&#8203;.contained[4]&#8203;/*Observation&#8203;/riskFactor-200*&#8203;/&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l189&#8203;/c8)</b></td><td><b>error</b></td><td><b>The provided code &quot;https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid#A1&quot; exists in the CodeSystem, but the display &quot;põrutused, üldvibratsioon ja seda põhjustavad seadmed&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition&#8203;.contained[4]&#8203;/*Observation&#8203;/riskFactor-200*&#8203;/&#8203;.value&#8203;.ofType(CodeableConcept) (l189&#8203;/c8)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Tööst olenevad ohutegurid' (https://fhir.ee/ValueSet/toost-olenevad-ohutegurid|1.0.0), and a coding from this value set is required) (codes = https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid#A1)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[5]&#8203;/*Observation&#8203;/additional-200*&#8203;/ (l199&#8203;/c6)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[5]&#8203;/*Observation&#8203;/additional-200*&#8203;/&#8203;.code&#8203;.coding[0]&#8203;.display (l208&#8203;/c8)</b></td><td><b>warning</b></td><td><b>The provided code &quot;http://snomed.info/sct#225891002&quot; exists in the CodeSystem, and the display &quot;Fit for work with certain limitations&quot; is a valid designation, but it has no specified &quot;use&quot; and thus may not be acceptable.</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition&#8203;.type&#8203;.coding[0]&#8203;.display (l430&#8203;/c4)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Composition&#8203;.section[0]&#8203;.entry[0] (l235&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #employment-800 matching against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0</b> <span id="sl30" class="flip" onclick="flip('l30')">Show Reasoning</span><div id="l30" style="display: none"><p>&nbsp;</p><ul><li>Composition.contained[1]/*Observation/employment-800*/.component[0].value.ofType(CodeableConcept).coding[0]: Error from https://term.tehik.ee/fhir: Error: [03abf586-6ad4-447d-9e72-dfd1a70c7f26]: A usable code system with URL https://fhir.ee/CodeSystem/occupation could not be resolved.
+Information: (no details supplied)
+</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Composition&#8203;.section[8]&#8203;.entry[0] (l354&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #riskFactor-200 matching against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0</b> <span id="sl31" class="flip" onclick="flip('l31')">Show Reasoning</span><div id="l31" style="display: none"><p>&nbsp;</p><ul><li>Composition.contained[4]/*Observation/riskFactor-200*/.value.ofType(CodeableConcept).coding[0].display: The provided code &quot;https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid#A1&quot; exists in the CodeSystem, but the display &quot;põrutused, üldvibratsioon ja seda põhjustavad seadmed&quot; is incorrect</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Composition-section-300"> </a>
+<h2><a href="Composition-section-300.html">fsh-generated/resources/Composition-section-300.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(5)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Composition: Validated against <i>this.</i><a href="StructureDefinition-ee-health-certificate-driver.html">Mootosõidukijuhi tervisetõend</a></li><li>Composition.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a></li><li>Composition.contained[1]: Validated against <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-HcertObservation.html">Temporary Observation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition&#8203;.contained[1]&#8203;/*Observation&#8203;/decision-222*&#8203;/ (l55&#8203;/c6)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition&#8203;.type&#8203;.coding[0]&#8203;.display (l118&#8203;/c4)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-ee.fhir.hcert"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-ee.fhir.hcert.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ImplementationGuide/ee.fhir.hcert: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.jurisdiction[0] (l1&#8203;/c903)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_OperationDefinition-ee-health-certificate-pdf"> </a>
+<h2><a href="OperationDefinition-ee-health-certificate-pdf.html">fsh-generated/resources/OperationDefinition-ee-health-certificate-pdf.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>OperationDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/operationdefinition.html">OperationDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>OperationDefinition&#8203;.jurisdiction[0] (l1&#8203;/c1659)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-org1"> </a>
+<h2><a href="Organization-org1.html">fsh-generated/resources/Organization-org1.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/organization.html">Organization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-pat1"> </a>
+<h2><a href="Patient-pat1.html">fsh-generated/resources/Patient-pat1.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/patient.html">Patient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Practitioner-pract1"> </a>
+<h2><a href="Practitioner-pract1.html">fsh-generated/resources/Practitioner-pract1.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Practitioner: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_QuestionnaireResponse-qre-200"> </a>
+<h2><a href="QuestionnaireResponse-qre-200.html">fsh-generated/resources/QuestionnaireResponse-qre-200.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>QuestionnaireResponse (l5/c67)</b></td><td><b>warning</b></td><td><b>The questionnaire 'urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b' could not be resolved, so no validation can be performed against the base questionnaire</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Questionnaire_QR_Q_NotFound</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-HcertObservation"> </a>
+<h2><a href="StructureDefinition-HcertObservation.html">fsh-generated/resources/StructureDefinition-HcertObservation.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c8358)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.ee&#8203;/hcert&#8203;/StructureDefinition&#8203;/HcertObservation')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate"> </a>
+<h2><a href="StructureDefinition-ee-health-certificate.html">fsh-generated/resources/StructureDefinition-ee-health-certificate.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c183991)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[164]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c424245)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c623870)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate-driver"> </a>
+<h2><a href="StructureDefinition-ee-health-certificate-driver.html">fsh-generated/resources/StructureDefinition-ee-health-certificate-driver.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c19642)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[164]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c260048)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate-occupational"> </a>
+<h2><a href="StructureDefinition-ee-health-certificate-occupational.html">fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c143352)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[292]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c570950)</b></td><td><b>warning</b></td><td><b>The provided code &quot;http://snomed.info/sct#225891002&quot; exists in the CodeSystem, and the display &quot;Fit for work with certain limitations&quot; is a valid designation, but it has no specified &quot;use&quot; and thus may not be acceptable.</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[344]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c650974)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c978732)</b></td><td><b>warning</b></td><td><b>The provided code &quot;http://snomed.info/sct#225891002&quot; exists in the CodeSystem, and the display &quot;Fit for work with certain limitations&quot; is a valid designation, but it has no specified &quot;use&quot; and thus may not be acceptable.</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ee-health-certificate-occupational-employer"> </a>
+<h2><a href="StructureDefinition-ee-health-certificate-occupational-employer.html">fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c11889)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[292]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c439500)</b></td><td><b>warning</b></td><td><b>The provided code &quot;http://snomed.info/sct#225891002&quot; exists in the CodeSystem, and the display &quot;Fit for work with certain limitations&quot; is a valid designation, but it has no specified &quot;use&quot; and thus may not be acceptable.</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[344]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l1&#8203;/c519524)</b></td><td><b>error</b></td><td><b>The provided code &quot;http://snomed.info/sct#772786005&quot; exists in the CodeSystem, but the display &quot;Medical Certificate&quot; is incorrect</b> (from <a href="qa-txservers.html#https://term.tehik.ee/fhir">https://term.tehik.ee/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/fhir&#8203;.ee&#8203;/hcert&#8203;/StructureDefinition&#8203;/ee-health-certificate-occupational-employer')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-decision"> </a>
+<h2><a href="ValueSet-ee-health-certificate-decision.html">fsh-generated/resources/ValueSet-ee-health-certificate-decision.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1064)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-driver-medical-restriction"> </a>
+<h2><a href="ValueSet-ee-health-certificate-driver-medical-restriction.html">fsh-generated/resources/ValueSet-ee-health-certificate-driver-medical-restriction.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c4850)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-medical-restriction"> </a>
+<h2><a href="ValueSet-ee-health-certificate-medical-restriction.html">fsh-generated/resources/ValueSet-ee-health-certificate-medical-restriction.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1194)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-occupational-additional-condition"> </a>
+<h2><a href="ValueSet-ee-health-certificate-occupational-additional-condition.html">fsh-generated/resources/ValueSet-ee-health-certificate-occupational-additional-condition.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1318)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-occupational-medical-restriction"> </a>
+<h2><a href="ValueSet-ee-health-certificate-occupational-medical-restriction.html">fsh-generated/resources/ValueSet-ee-health-certificate-occupational-medical-restriction.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c3277)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-status"> </a>
+<h2><a href="ValueSet-ee-health-certificate-status.html">fsh-generated/resources/ValueSet-ee-health-certificate-status.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c2185)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2324)</b></td><td><b>error</b></td><td><b>The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l8">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_16</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2393)</b></td><td><b>error</b></td><td><b>The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l8">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_16</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2468)</b></td><td><b>error</b></td><td><b>The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l8">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_16</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ee-health-certificate-usage-area"> </a>
+<h2><a href="ValueSet-ee-health-certificate-usage-area.html">fsh-generated/resources/ValueSet-ee-health-certificate-usage-area.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1086)</b></td><td><b>error</b></td><td><b>Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>auto generated dt elements by same builder</b></p><ul>
+ <li>TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML <span style="color: navy">(24 uses)<span></li>
+</ul>
+<p><b>deprecated but no alternative is provided</b></p><ul>
+ <li>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>don't plan to have terminology here in the future</b></p><ul>
+ <li>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present <span style="color: navy">(4 uses)<span></li>
+ <li>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present <span style="color: navy">(4 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-section-300.html">fsh-generated/resources/Composition-section-300.json</a></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Details_for__matching_against_Profile_"> </a>
+<h2>Details_for__matching_against_Profile_</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Details for #employment-800 matching against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>Details for #riskFactor-200 matching against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Q_NotFound"> </a>
+<h2>Questionnaire_QR_Q_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="QuestionnaireResponse-qre-200.html">fsh-generated/resources/QuestionnaireResponse-qre-200.json</a></td><td><b>The questionnaire 'urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b' could not be resolved, so no validation can be performed against the base questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ED_EXPERIMENTAL_BINDING"> </a>
+<h2>SD_ED_EXPERIMENTAL_BINDING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-HcertObservation.html">fsh-generated/resources/StructureDefinition-HcertObservation.json</a></td><td><b>The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-HcertObservation.html">fsh-generated/resources/StructureDefinition-HcertObservation.json</a></td><td><b>The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-ee-health-certificate-status.html">fsh-generated/resources/ValueSet-ee-health-certificate-status.json</a></td><td><b>The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-ee-health-certificate-status.html">fsh-generated/resources/ValueSet-ee-health-certificate-status.json</a></td><td><b>The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-ee-health-certificate-status.html">fsh-generated/resources/ValueSet-ee-health-certificate-status.json</a></td><td><b>The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_1_CC"> </a>
+<h2>Terminology_TX_NoValid_1_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-section-100.html">fsh-generated/resources/Composition-section-100.json</a></td><td><b>None of the codings provided are in the value set 'Tööst olenevad ohutegurid' (https://fhir.ee/ValueSet/toost-olenevad-ohutegurid|1.0.0), and a coding from this value set is required) (codes = https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid#A1)</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-pdf"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition ee-health-certificate-pdf</b></p><a name="ee-health-certificate-pdf"> </a><a name="hcee-health-certificate-pdf"> </a><a name="ee-health-certificate-pdf-en-US"> </a><p>URL: [base]/Composition/[id]/$pdf</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>role</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td/><td><div><p>Isiku roll kelle jaoks on PDF genereeritud</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/binary.html">Binary</a></td><td/><td><div><p>PDF dokument binaarses formaadis</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/hcert/OperationDefinition/ee-health-certificate-pdf"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificatePdf"/>
+  <title value="Tervisetõendi PDF genereerimine"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:00:30+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="FHIR operatsioon PDF dokumendi generereerimiseks tervisetõend (Composition) ressursi põhjal"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="false"/>
+  <code value="pdf"/>
+  <resource value="Composition"/>
+  <system value="false"/>
+  <type value="false"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="role"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Isiku roll kelle jaoks on PDF genereeritud"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="PDF dokument binaarses formaadis"/>
+    <type value="Binary"/>
+  </parameter>
+</OperationDefinition>

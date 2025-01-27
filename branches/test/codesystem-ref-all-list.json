@@ -1,0 +1,293 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/composition-attestation-mode",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CompositionAttestationMode",
+      "title" : "Composition Attestation Mode",
+      "description" : "The way in which a person authenticated a composition.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.234",
+        "2.16.840.1.113883.4.642.4.239",
+        "2.16.840.1.113883.4.642.2.120"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-composition-attestation-mode.html" : "Composition Attestation Mode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/composition-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CompositionStatus",
+      "title" : "Composition Status",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.242",
+        "2.16.840.1.113883.4.642.2.123",
+        "2.16.840.1.113883.4.642.1.237"
+      ],
+      "uses" : {
+      },
+      "ValueSet-ee-health-certificate-status.html" : "Tervisetõendi staatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.1.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/narrative-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "NarrativeStatus",
+      "title" : "NarrativeStatus",
+      "description" : "The status of a resource narrative.",
+      "oids" : ["2.16.840.1.113883.4.642.4.56"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-narrative-status.html" : "NarrativeStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-referencerange-normalvalue",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationReferenceRangeNormalValue",
+      "title" : "ObservationreferenceRangeNormalValue",
+      "description" : "Codes that describe the normal value in the reference range.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2099"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-referencerange-normalvalue.html" : "Observation Reference Range Normal Value Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.401",
+        "2.16.840.1.113883.4.642.1.388",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-status.html" : "Observation Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the triggeredBy type of observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2098"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-triggeredbytype.html" : "triggered Bytype"
+    },
+    {
+      "url" : "http://hl7.org/fhir/service-mode",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ServiceMode",
+      "title" : "Service Mode",
+      "description" : "An example set of Service Modes that could be applicable to use to characterize HealthcareServices or PractitionerRoles while searching",
+      "oids" : ["2.16.840.1.113883.4.642.4.2116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-service-mode.html" : "Service Mode"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-doc-section-codes.html" : "Document Section Codes",
+      "http://hl7.org/fhir/R5/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+      "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-data-absent-reason.html" : "Data Absent Reason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-list-empty-reason.html" : "List Empty Reasons"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-list-order.html" : "List Order Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-practitioner-role.html" : "Practitioner Role"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateDecision",
+      "title" : "Tervisetõendi otsus",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-ee-health-certificate-decision.html" : "Tervisetõendi otsus"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateOccupationalAdditionalCondition",
+      "title" : "Püsiva töövõime säilitamiseks vajalik lisatingimus",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-ee-health-certificate-occupational-additional-condition.html" : "Püsiva töövõime säilitamiseks vajalik lisatingimus"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateRestriction",
+      "title" : "Tervisetõendi piirang",
+      "description" : "Piirangute nimekiri erinevate kasutusalade lõikes",
+      "uses" : {
+      },
+      "ValueSet-ee-health-certificate-medical-restriction.html" : "Tervisetõendi meditsiiniline piirang",
+      "ValueSet-ee-health-certificate-occupational-medical-restriction.html" : "Töötervishoiu tervisetõendi meditsiiniline piirang",
+      "ValueSet-ee-health-certificate-driver-medical-restriction.html" : "Mootosõidukijuhi tervisetõendi meditsiiniline piirang"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateUsageArea",
+      "title" : "Tervisetõendi kasutusala",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-ee-health-certificate-usage-area.html" : "Tervisetõendi kasutusala"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

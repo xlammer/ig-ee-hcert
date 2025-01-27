@@ -1,0 +1,58 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "ee-health-certificate-pdf",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition ee-health-certificate-pdf</b></p><a name=\"ee-health-certificate-pdf\"> </a><a name=\"hcee-health-certificate-pdf\"> </a><a name=\"ee-health-certificate-pdf-en-US\"> </a><p>URL: [base]/Composition/[id]/$pdf</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>role</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td/><td><div><p>Isiku roll kelle jaoks on PDF genereeritud</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/binary.html\">Binary</a></td><td/><td><div><p>PDF dokument binaarses formaadis</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/hcert/OperationDefinition/ee-health-certificate-pdf",
+  "version" : "1.0.0",
+  "name" : "EEHealthCertificatePdf",
+  "title" : "Tervisetõendi PDF genereerimine",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2025-01-27T10:12:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "abi@tehik.ee"
+    }]
+  }],
+  "description" : "FHIR operatsioon PDF dokumendi generereerimiseks tervisetõend (Composition) ressursi põhjal",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EST",
+      "display" : "Estonia"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "pdf",
+  "resource" : ["Composition"],
+  "system" : false,
+  "type" : false,
+  "instance" : true,
+  "parameter" : [{
+    "name" : "role",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Isiku roll kelle jaoks on PDF genereeritud",
+    "type" : "string"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "PDF dokument binaarses formaadis",
+    "type" : "Binary"
+  }]
+}

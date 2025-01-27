@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-section"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ee-health-certificate-section</b></p><a name="ee-health-certificate-section"> </a><a name="hcee-health-certificate-section"> </a><a name="ee-health-certificate-section-en-US"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">decision<a name="ee-health-certificate-section-decision"> </a></td><td>Tervisetõendi otsus</td></tr><tr><td style="white-space:nowrap">shortened-reason<a name="ee-health-certificate-section-shortened-reason"> </a></td><td>Lühema tervisekontrolli aja põhjus</td></tr><tr><td style="white-space:nowrap">reject-reason<a name="ee-health-certificate-section-reject-reason"> </a></td><td>Eitava otsuse põhjendus</td></tr><tr><td style="white-space:nowrap">change-reason<a name="ee-health-certificate-section-change-reason"> </a></td><td>Tervisetõendi muutmise põhjus</td></tr><tr><td style="white-space:nowrap">cancel-reason<a name="ee-health-certificate-section-cancel-reason"> </a></td><td>Tervisetõendi tühistamise põhjus</td></tr><tr><td style="white-space:nowrap">suspend-reason<a name="ee-health-certificate-section-suspend-reason"> </a></td><td>Tervisetõendi peatamise põhjus</td></tr><tr><td style="white-space:nowrap">risk-factors<a name="ee-health-certificate-section-risk-factors"> </a></td><td>Tööst olenevad ohutegurid</td></tr><tr><td style="white-space:nowrap">employer<a name="ee-health-certificate-section-employer"> </a></td><td>Tööandja</td></tr><tr><td style="white-space:nowrap">health-declaration<a name="ee-health-certificate-section-health-declaration"> </a></td><td>Tervisedeklaratsioon</td></tr><tr><td style="white-space:nowrap">medical-restrictions<a name="ee-health-certificate-section-medical-restrictions"> </a></td><td>Meditsiinilised piirangud</td></tr><tr><td style="white-space:nowrap">work-additional-conditions<a name="ee-health-certificate-section-work-additional-conditions"> </a></td><td>Püsiva töövõime säilitamiseks vajalikud lisatingimused</td></tr><tr><td style="white-space:nowrap">employer-suggestions<a name="ee-health-certificate-section-employer-suggestions"> </a></td><td>Ettepanekud tööandjale</td></tr><tr><td style="white-space:nowrap">employee-suggestions<a name="ee-health-certificate-section-employee-suggestions"> </a></td><td>Ettepanekud töötajale</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificateSection"/>
+  <title value="Tervisetõendi sektsioon"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:00:30+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="decision"/>
+    <display value="Tervisetõendi otsus"/>
+  </concept>
+  <concept>
+    <code value="shortened-reason"/>
+    <display value="Lühema tervisekontrolli aja põhjus"/>
+  </concept>
+  <concept>
+    <code value="reject-reason"/>
+    <display value="Eitava otsuse põhjendus"/>
+  </concept>
+  <concept>
+    <code value="change-reason"/>
+    <display value="Tervisetõendi muutmise põhjus"/>
+  </concept>
+  <concept>
+    <code value="cancel-reason"/>
+    <display value="Tervisetõendi tühistamise põhjus"/>
+  </concept>
+  <concept>
+    <code value="suspend-reason"/>
+    <display value="Tervisetõendi peatamise põhjus"/>
+  </concept>
+  <concept>
+    <code value="risk-factors"/>
+    <display value="Tööst olenevad ohutegurid"/>
+  </concept>
+  <concept>
+    <code value="employer"/>
+    <display value="Tööandja"/>
+  </concept>
+  <concept>
+    <code value="health-declaration"/>
+    <display value="Tervisedeklaratsioon"/>
+  </concept>
+  <concept>
+    <code value="medical-restrictions"/>
+    <display value="Meditsiinilised piirangud"/>
+  </concept>
+  <concept>
+    <code value="work-additional-conditions"/>
+    <display value="Püsiva töövõime säilitamiseks vajalikud lisatingimused"/>
+  </concept>
+  <concept>
+    <code value="employer-suggestions"/>
+    <display value="Ettepanekud tööandjale"/>
+  </concept>
+  <concept>
+    <code value="employee-suggestions"/>
+    <display value="Ettepanekud töötajale"/>
+  </concept>
+</CodeSystem>

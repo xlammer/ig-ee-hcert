@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/hcert/Composition/section-300> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "section-300"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/hcert/StructureDefinition/ee-health-certificate-driver"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/hcert/StructureDefinition/ee-health-certificate-driver>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition section-300</b></p><a name=\"section-300\"> </a><a name=\"hcsection-300\"> </a><a name=\"section-300-en-US\"> </a><p><b>identifier</b>: <code>https://fhir.ee/hcert/health-certificate-number</code>/HCERT-321</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 772786005}\">Medical Certificate</span></p><p><b>category</b>: <span title=\"Codes:{https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area driver}\">Mootorsõidukijuhi tervisekontroll</span></p><p><b>date</b>: 2024-11-05 11:45:29+0000</p><p><b>author</b>: <a href=\"#hcsection-300/author-200\">PractitionerRole Doctor</a></p><p><b>title</b>: Mootorsõiduki juhtimise tervisetõend</p><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-11-05 00:00:00+0000 --&gt; 2025-11-05 00:00:00+0000</td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #author-200</b></p><a name=\"section-300/author-200\"> </a><a name=\"hcsection-300/author-200\"> </a><a name=\"section-300/author-200-en-US\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-pract1.html\">Practitioner Paavo Arst </a></p><p><b>organization</b>: <a href=\"Organization-org1.html\">Organization Karulaugu Perearstikeskus</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/practitioner-role doctor}\">Doctor</span></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Observation #decision-222</b></p><a name=\"section-300/decision-222\"> </a><a name=\"hcsection-300/decision-222\"> </a><a name=\"section-300/decision-222-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 419183001}\">Practitioner decision status</span></p><p><b>subject</b>: <a href=\"Patient-pat1.html\">Taavi Kask  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2013-04-02 09:30:10+0100</p><p><b>value</b>: <span title=\"Codes:{https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision no}\">Ei sobi</span></p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:PractitionerRole ;
+     fhir:id [ fhir:v "author-200" ] ;
+     fhir:practitioner [
+       fhir:link <https://fhir.ee/hcert/Practitioner/pract1> ;
+       fhir:reference [ fhir:v "Practitioner/pract1" ]
+     ] ;
+     fhir:organization [
+       fhir:link <https://fhir.ee/hcert/Organization/org1> ;
+       fhir:reference [ fhir:v "Organization/org1" ]
+     ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/practitioner-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "doctor" ] ;
+         fhir:display [ fhir:v "Doctor" ]
+       ] )
+     ] )
+  ] [
+     a fhir:Observation ;
+     fhir:id [ fhir:v "decision-222" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/hcert/StructureDefinition/HcertObservation"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/hcert/StructureDefinition/HcertObservation>
+       ] )
+     ] ;
+     fhir:status [ fhir:v "final" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:419183001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "419183001" ] ;
+         fhir:display [ fhir:v "Practitioner decision status" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:link <https://fhir.ee/hcert/Patient/pat1> ;
+       fhir:reference [ fhir:v "Patient/pat1" ]
+     ] ;
+     fhir:effective [ fhir:v "2013-04-02T09:30:10+01:00"^^xsd:dateTime ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "no" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/hcert/health-certificate-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HCERT-321" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:772786005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "772786005" ] ;
+       fhir:display [ fhir:v "Medical Certificate" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "driver" ]
+     ] )
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <https://fhir.ee/hcert/Patient/pat1> ;
+     fhir:reference [ fhir:v "Patient/pat1" ]
+  ] ) ; # 
+  fhir:date [ fhir:v "2024-11-05T11:45:29.0437162+00:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:reference [ fhir:v "#author-200" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Mootorsõiduki juhtimise tervisetõend"] ; # 
+  fhir:event ( [
+     fhir:period [
+       fhir:start [ fhir:v "2024-11-05T00:00:00.000+00:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2025-11-05T00:00:00.000+00:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "decision" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "#decision-222" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "reject-reason" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "additional" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ei tunne värve</div>"
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

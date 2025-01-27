@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-health-certificate-occupational-medical-restriction",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ee-health-certificate-occupational-medical-restriction</b></p><a name=\"ee-health-certificate-occupational-medical-restriction\"> </a><a name=\"hcee-health-certificate-occupational-medical-restriction\"> </a><a name=\"ee-health-certificate-occupational-medical-restriction-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ee-health-certificate-restriction.html\"><code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-night-work\">no-night-work</a></td><td style=\"color: #cccccc\">Ei sobi öö töö</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-solo-work\">no-solo-work</a></td><td style=\"color: #cccccc\">Ei sobi töötama üksinda</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-work-hours\">limited-work-hours</a></td><td style=\"color: #cccccc\">Lubatud tööpäeva pikkus kuni … tundi</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-heavy-lifting\">no-heavy-lifting</a></td><td style=\"color: #cccccc\">Vältida käsitsi raskuste teisaldamine üle … kg</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-height-work\">no-height-work</a></td><td style=\"color: #cccccc\">Ei ole lubatud töö kõrgustes … meetrit ja rohkem</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-electrical-work\">no-electrical-work</a></td><td style=\"color: #cccccc\">Ei ole lubatud töö pingestatud elektriseadmetega</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-moving-machinery\">no-moving-machinery</a></td><td style=\"color: #cccccc\">Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)</td></tr><tr><td><a href=\"CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-restricted-environmental-hazards\">restricted-environmental-hazards</a></td><td style=\"color: #cccccc\">Ei sobi töö järgmiste töökeskkonna ohuteguritega: ....</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction",
+  "version" : "1.0.0",
+  "name" : "EEHealthCertificateOccupationalMedicalRestrictionVS",
+  "title" : "Töötervishoiu tervisetõendi meditsiiniline piirang",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-27T10:12:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "abi@tehik.ee"
+    }]
+  }],
+  "description" : "Piirangud töötamiseks",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EST",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction",
+      "concept" : [{
+        "code" : "no-night-work"
+      },
+      {
+        "code" : "no-solo-work"
+      },
+      {
+        "code" : "limited-work-hours"
+      },
+      {
+        "code" : "no-heavy-lifting"
+      },
+      {
+        "code" : "no-height-work"
+      },
+      {
+        "code" : "no-electrical-work"
+      },
+      {
+        "code" : "no-moving-machinery"
+      },
+      {
+        "code" : "restricted-environmental-hazards"
+      }]
+    }]
+  }
+}

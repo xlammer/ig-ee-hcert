@@ -1,0 +1,44 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateDecision",
+      "title" : "Tervisetõendi otsus",
+      "description" : null
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateOccupationalAdditionalCondition",
+      "title" : "Püsiva töövõime säilitamiseks vajalik lisatingimus",
+      "description" : null
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateRestriction",
+      "title" : "Tervisetõendi piirang",
+      "description" : "Piirangute nimekiri erinevate kasutusalade lõikes"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateSection",
+      "title" : "Tervisetõendi sektsioon",
+      "description" : null
+    },
+    {
+      "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateUsageArea",
+      "title" : "Tervisetõendi kasutusala",
+      "description" : null
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision,1.0.0,active,,EEHealthCertificateDecision,Tervisetõendi otsus,"",
+https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition,1.0.0,active,,EEHealthCertificateOccupationalAdditionalCondition,Püsiva töövõime säilitamiseks vajalik lisatingimus,"",
+https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction,1.0.0,active,,EEHealthCertificateRestriction,Tervisetõendi piirang,"Piirangute nimekiri erinevate kasutusalade lõikes",
+https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section,1.0.0,active,,EEHealthCertificateSection,Tervisetõendi sektsioon,"",
+https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area,1.0.0,active,,EEHealthCertificateUsageArea,Tervisetõendi kasutusala,"",

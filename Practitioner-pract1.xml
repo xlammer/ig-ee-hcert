@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="pract1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner pract1</b></p><a name="pract1"> </a><a name="hcpract1"> </a><a name="pract1-en-US"> </a><p><b>identifier</b>: <code>https://fhir.ee/sid/pro/est/pho</code>/D12345</p><p><b>active</b>: true</p><p><b>name</b>: Paavo Arst </p></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/pro/est/pho"/>
+    <value value="D12345"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Arst"/>
+    <given value="Paavo"/>
+  </name>
+</Practitioner>

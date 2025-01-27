@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-occupational-additional-condition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ee-health-certificate-occupational-additional-condition</b></p><a name="ee-health-certificate-occupational-additional-condition"> </a><a name="hcee-health-certificate-occupational-additional-condition"> </a><a name="ee-health-certificate-occupational-additional-condition-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html"><code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificateOccupationalAdditionalConditionVS"/>
+  <title value="Püsiva töövõime säilitamiseks vajalik lisatingimus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:12:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"/>
+    </include>
+  </compose>
+</ValueSet>

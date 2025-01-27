@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ee-health-certificate-decision",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-health-certificate-decision</b></p><a name=\"ee-health-certificate-decision\"> </a><a name=\"hcee-health-certificate-decision\"> </a><a name=\"ee-health-certificate-decision-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"ee-health-certificate-decision-yes\"> </a></td><td>Sobib</td></tr><tr><td style=\"white-space:nowrap\">yes-with-restrictions<a name=\"ee-health-certificate-decision-yes-with-restrictions\"> </a></td><td>Sobib piirangutega</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"ee-health-certificate-decision-no\"> </a></td><td>Ei sobi</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision",
+  "version" : "1.0.0",
+  "name" : "EEHealthCertificateDecision",
+  "title" : "Tervisetõendi otsus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-27T10:12:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "abi@tehik.ee"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EST",
+      "display" : "Estonia"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "yes",
+    "display" : "Sobib"
+  },
+  {
+    "code" : "yes-with-restrictions",
+    "display" : "Sobib piirangutega"
+  },
+  {
+    "code" : "no",
+    "display" : "Ei sobi"
+  }]
+}

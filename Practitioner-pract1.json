@@ -1,0 +1,17 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "pract1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner pract1</b></p><a name=\"pract1\"> </a><a name=\"hcpract1\"> </a><a name=\"pract1-en-US\"> </a><p><b>identifier</b>: <code>https://fhir.ee/sid/pro/est/pho</code>/D12345</p><p><b>active</b>: true</p><p><b>name</b>: Paavo Arst </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.ee/sid/pro/est/pho",
+    "value" : "D12345"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Arst",
+    "given" : ["Paavo"]
+  }]
+}

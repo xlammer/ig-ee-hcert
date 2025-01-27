@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-health-certificate-medical-restriction",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ee-health-certificate-medical-restriction</b></p><a name=\"ee-health-certificate-medical-restriction\"> </a><a name=\"hcee-health-certificate-medical-restriction\"> </a><a name=\"ee-health-certificate-medical-restriction-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ee-health-certificate-restriction.html\"><code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction",
+  "version" : "1.0.0",
+  "name" : "EEHealthCertificateMedicalRestrictionVS",
+  "title" : "Tervisetõendi meditsiiniline piirang",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-27T10:12:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "abi@tehik.ee"
+    }]
+  }],
+  "description" : "Kõik piirangud",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EST",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+    }]
+  }
+}

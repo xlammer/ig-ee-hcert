@@ -1,0 +1,120 @@
+HCERT
+=========================================
+
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-occupational-additional-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-usage-area.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-decision.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ee-health-certificate-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-occupational-additional-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-usage-area.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-decision.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ee-health-certificate-section.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/pract1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/qre-200.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Composition/section-300.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Patient/pat1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Composition/section-100.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-decision.json: line 1, col 1537, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-occupational-additional-condition.json: line 1, col 2054, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-restriction.json: line 1, col 5462, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-section.json: line 1, col 3232, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/CodeSystem-ee-health-certificate-usage-area.json: line 1, col 3878, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 55, col 6, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 74, col 12, Error - Error from https://term.tehik.ee/fhir: Error: [03abf586-6ad4-447d-9e72-dfd1a70c7f26]: A usable code system with URL https://fhir.ee/CodeSystem/occupation could not be resolved.
+Information: (no details supplied)
+ (CODEINVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 100, col 6, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 131, col 6, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 167, col 6, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 189, col 8, Error - The provided code "https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid#A1" exists in the CodeSystem, but the display "põrutused, üldvibratsioon ja seda põhjustavad seadmed" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 189, col 8, Error - None of the codings provided are in the value set 'Tööst olenevad ohutegurid' (https://fhir.ee/ValueSet/toost-olenevad-ohutegurid|1.0.0), and a coding from this value set is required) (codes = https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid#A1) (CODEINVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 199, col 6, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 208, col 8, Warning - The provided code "http://snomed.info/sct#225891002" exists in the CodeSystem, and the display "Fit for work with certain limitations" is a valid designation, but it has no specified "use" and thus may not be acceptable. (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 430, col 4, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 235, col 10, Info - Details for #employment-800 matching against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0 (STRUCTURE)
+/github/workspace/fsh-generated/resources/Composition-section-100.json: line 354, col 10, Info - Details for #riskFactor-200 matching against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0 (STRUCTURE)
+/github/workspace/fsh-generated/resources/Composition-section-300.json: line 55, col 6, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Composition-section-300.json: line 118, col 4, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/ImplementationGuide-ee.fhir.hcert.json: line 1, col 903, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/OperationDefinition-ee-health-certificate-pdf.json: line 1, col 1659, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/QuestionnaireResponse-qre-200.json: line 5, col 67, Warning - The questionnaire 'urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b' could not be resolved, so no validation can be performed against the base questionnaire (REQUIRED)
+/github/workspace/fsh-generated/resources/StructureDefinition-HcertObservation.json: line 1, col 8358, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-HcertObservation.json: line 0, col 0, Warning - The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-HcertObservation.json: line 0, col 0, Warning - The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-HcertObservation.json: line 0, col 0, Info - The Implementation Guide contains no explicitly linked examples for this profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate.json: line 1, col 183991, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate.json: line 1, col 424245, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate.json: line 1, col 623870, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-driver.json: line 1, col 19642, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-driver.json: line 1, col 260048, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-driver.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational.json: line 1, col 143352, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational.json: line 1, col 570950, Warning - The provided code "http://snomed.info/sct#225891002" exists in the CodeSystem, and the display "Fit for work with certain limitations" is a valid designation, but it has no specified "use" and thus may not be acceptable. (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational.json: line 1, col 650974, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational.json: line 1, col 978732, Warning - The provided code "http://snomed.info/sct#225891002" exists in the CodeSystem, and the display "Fit for work with certain limitations" is a valid designation, but it has no specified "use" and thus may not be acceptable. (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer.json: line 1, col 11889, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer.json: line 1, col 439500, Warning - The provided code "http://snomed.info/sct#225891002" exists in the CodeSystem, and the display "Fit for work with certain limitations" is a valid designation, but it has no specified "use" and thus may not be acceptable. (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer.json: line 1, col 519524, Error - The provided code "http://snomed.info/sct#772786005" exists in the CodeSystem, but the display "Medical Certificate" is incorrect (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-ee-health-certificate-occupational-employer.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-decision.json: line 1, col 1064, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-driver-medical-restriction.json: line 1, col 4850, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-medical-restriction.json: line 1, col 1194, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-occupational-additional-condition.json: line 1, col 1318, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-occupational-medical-restriction.json: line 1, col 3277, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-status.json: line 1, col 2185, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-status.json: line 1, col 2324, Error - The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+) (CODEINVALID)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-status.json: line 1, col 2393, Error - The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+) (CODEINVALID)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-status.json: line 1, col 2468, Error - The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [598f86a1-d6ac-4ff5-adf5-4bacf0f85f02]: Coding without system value.
+Information: (no details supplied)
+) (CODEINVALID)
+/github/workspace/fsh-generated/resources/ValueSet-ee-health-certificate-usage-area.json: line 1, col 1086, Error - Error from https://term.tehik.ee/fhir: Error: [11367b4f-4781-481b-8b9d-bbda3bf649b6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+
+err = 32, warn = 29, info = 7
+IG Publisher Version: 1.8.9

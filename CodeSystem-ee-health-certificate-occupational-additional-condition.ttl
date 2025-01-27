@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-health-certificate-occupational-additional-condition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-health-certificate-occupational-additional-condition</b></p><a name=\"ee-health-certificate-occupational-additional-condition\"> </a><a name=\"hcee-health-certificate-occupational-additional-condition\"> </a><a name=\"ee-health-certificate-occupational-additional-condition-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">safety-gear<a name=\"ee-health-certificate-occupational-additional-condition-safety-gear\"> </a></td><td>Isikukaitsevahendid</td></tr><tr><td style=\"white-space:nowrap\">work-related-changes<a name=\"ee-health-certificate-occupational-additional-condition-work-related-changes\"> </a></td><td>Töökorralduslikud muudatused</td></tr><tr><td style=\"white-space:nowrap\">work-environment<a name=\"ee-health-certificate-occupational-additional-condition-work-environment\"> </a></td><td>Töökeskkond</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"ee-health-certificate-occupational-additional-condition-other\"> </a></td><td>Muu</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEHealthCertificateOccupationalAdditionalCondition"] ; # 
+  fhir:title [ fhir:v "Püsiva töövõime säilitamiseks vajalik lisatingimus"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-27T10:00:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "abi@tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EST" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "safety-gear" ] ;
+     fhir:display [ fhir:v "Isikukaitsevahendid" ]
+  ] [
+     fhir:code [ fhir:v "work-related-changes" ] ;
+     fhir:display [ fhir:v "Töökorralduslikud muudatused" ]
+  ] [
+     fhir:code [ fhir:v "work-environment" ] ;
+     fhir:display [ fhir:v "Töökeskkond" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Muu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-decision,1.0.0,active,,EEHealthCertificateDecisionVS,Tervisetõendi otsus,"",,"Internal"
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-driver-medical-restriction,1.0.0,active,,EEHealthCertificateDriverMedicalRestrictionVS,Mootosõidukijuhi tervisetõendi meditsiiniline piirang,"Piirangud mootorsõiduki juhtimiseks",,"Internal"
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction,1.0.0,active,,EEHealthCertificateMedicalRestrictionVS,Tervisetõendi meditsiiniline piirang,"Kõik piirangud",,"Internal"
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition,1.0.0,active,,EEHealthCertificateOccupationalAdditionalConditionVS,Püsiva töövõime säilitamiseks vajalik lisatingimus,"",,"Internal"
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction,1.0.0,active,,EEHealthCertificateOccupationalMedicalRestrictionVS,Töötervishoiu tervisetõendi meditsiiniline piirang,"Piirangud töötamiseks",,"Internal"
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-status,1.0.0,active,,EEHealthCertificateStatusVS,Tervisetõendi staatus,"",,"hl7.fhir.r5.core"
+https://fhir.ee/hcert/ValueSet/ee-health-certificate-usage-area,1.0.0,active,,EEHealthCertificateUsageAreaVS,Tervisetõendi kasutusala,"",,"Internal"

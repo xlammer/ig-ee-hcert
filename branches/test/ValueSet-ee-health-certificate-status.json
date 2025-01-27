@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-health-certificate-status",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ee-health-certificate-status</b></p><a name=\"ee-health-certificate-status\"> </a><a name=\"hcee-health-certificate-status\"> </a><a name=\"ee-health-certificate-status-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R5/codesystem-composition-status.html\"><code>http://hl7.org/fhir/composition-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Estonian (et)</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-composition-status.html#composition-status-preliminary\">preliminary</a></td><td style=\"color: #cccccc\">Preliminary</td><td>Verified early results are available, but not all results are final.</td><td>Mustand</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-composition-status.html#composition-status-final\">final</a></td><td style=\"color: #cccccc\">Final</td><td>This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.</td><td>Lõpetatud</td></tr><tr><td><a href=\"http://hl7.org/fhir/R5/codesystem-composition-status.html#composition-status-cancelled\">cancelled</a></td><td style=\"color: #cccccc\">Cancelled</td><td>The composition is unavailable because the measurement was not started or not completed (also sometimes called &quot;aborted&quot;).</td><td>Tühistatud</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-status",
+  "version" : "1.0.0",
+  "name" : "EEHealthCertificateStatusVS",
+  "title" : "Tervisetõendi staatus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-27T10:12:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "abi@tehik.ee"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EST",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/composition-status",
+      "concept" : [{
+        "code" : "preliminary",
+        "designation" : [{
+          "language" : "et",
+          "value" : "Mustand"
+        }]
+      },
+      {
+        "code" : "final",
+        "designation" : [{
+          "language" : "et",
+          "value" : "Lõpetatud"
+        }]
+      },
+      {
+        "code" : "cancelled",
+        "designation" : [{
+          "language" : "et",
+          "value" : "Tühistatud"
+        }]
+      }]
+    }]
+  }
+}

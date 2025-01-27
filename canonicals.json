@@ -1,0 +1,135 @@
+[
+  {
+    "id" : "ee-health-certificate-decision",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateDecision"
+  },
+  {
+    "id" : "ee-health-certificate-occupational-additional-condition",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateOccupationalAdditionalCondition"
+  },
+  {
+    "id" : "ee-health-certificate-restriction",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateRestriction"
+  },
+  {
+    "id" : "ee-health-certificate-section",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateSection"
+  },
+  {
+    "id" : "ee-health-certificate-usage-area",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateUsageArea"
+  },
+  {
+    "id" : "ee.fhir.hcert",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/hcert/ImplementationGuide/ee.fhir.hcert",
+    "version" : "1.0.0",
+    "name" : "HCERT"
+  },
+  {
+    "id" : "ee-health-certificate-pdf",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/hcert/OperationDefinition/ee-health-certificate-pdf",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificatePdf"
+  },
+  {
+    "id" : "HcertObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/hcert/StructureDefinition/HcertObservation",
+    "version" : "1.0.0",
+    "name" : "HcertObservation"
+  },
+  {
+    "id" : "ee-health-certificate",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/hcert/StructureDefinition/ee-health-certificate",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificate"
+  },
+  {
+    "id" : "ee-health-certificate-driver",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/hcert/StructureDefinition/ee-health-certificate-driver",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateDriver"
+  },
+  {
+    "id" : "ee-health-certificate-occupational",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/hcert/StructureDefinition/ee-health-certificate-occupational",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateOccupational"
+  },
+  {
+    "id" : "ee-health-certificate-occupational-employer",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/hcert/StructureDefinition/ee-health-certificate-occupational-employer",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateOccupationalEmployer"
+  },
+  {
+    "id" : "ee-health-certificate-decision",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-decision",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateDecisionVS"
+  },
+  {
+    "id" : "ee-health-certificate-driver-medical-restriction",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-driver-medical-restriction",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateDriverMedicalRestrictionVS"
+  },
+  {
+    "id" : "ee-health-certificate-medical-restriction",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateMedicalRestrictionVS"
+  },
+  {
+    "id" : "ee-health-certificate-occupational-additional-condition",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateOccupationalAdditionalConditionVS"
+  },
+  {
+    "id" : "ee-health-certificate-occupational-medical-restriction",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateOccupationalMedicalRestrictionVS"
+  },
+  {
+    "id" : "ee-health-certificate-status",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-status",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateStatusVS"
+  },
+  {
+    "id" : "ee-health-certificate-usage-area",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-usage-area",
+    "version" : "1.0.0",
+    "name" : "EEHealthCertificateUsageAreaVS"
+  }
+]

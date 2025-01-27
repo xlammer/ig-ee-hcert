@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-usage-area"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ee-health-certificate-usage-area</b></p><a name="ee-health-certificate-usage-area"> </a><a name="hcee-health-certificate-usage-area"> </a><a name="ee-health-certificate-usage-area-en-US"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">occupational<a name="ee-health-certificate-usage-area-occupational"> </a></td><td>Töötervishoiu tervisekontroll</td></tr><tr><td style="white-space:nowrap">driver<a name="ee-health-certificate-usage-area-driver"> </a></td><td>Mootorsõidukijuhi tervisekontroll</td></tr><tr><td style="white-space:nowrap">diver<a name="ee-health-certificate-usage-area-diver"> </a></td><td>Tuukrite tervisekontroll</td></tr><tr><td style="white-space:nowrap">blaster<a name="ee-health-certificate-usage-area-blaster"> </a></td><td>Lõhkaja, lõhkemeistri ja pürotehniku tervisekontroll</td></tr><tr><td style="white-space:nowrap">railway<a name="ee-health-certificate-usage-area-railway"> </a></td><td>Raudteetöötaja tervisekontroll</td></tr><tr><td style="white-space:nowrap">foreign-intelligence<a name="ee-health-certificate-usage-area-foreign-intelligence"> </a></td><td>Välisluureameti ametniku ja töötaja tervisekontroll</td></tr><tr><td style="white-space:nowrap">police<a name="ee-health-certificate-usage-area-police"> </a></td><td>Politseiametniku tervisekontroll</td></tr><tr><td style="white-space:nowrap">prison-service<a name="ee-health-certificate-usage-area-prison-service"> </a></td><td>Vanglateenistuse ametniku tervisekontroll</td></tr><tr><td style="white-space:nowrap">security-police<a name="ee-health-certificate-usage-area-security-police"> </a></td><td>Kaitsepolitseiameti ametniku ja töötaja tervisekontroll</td></tr><tr><td style="white-space:nowrap">maritime<a name="ee-health-certificate-usage-area-maritime"> </a></td><td>Meretööga seotud isikute tervisekontroll</td></tr><tr><td style="white-space:nowrap">security-guard<a name="ee-health-certificate-usage-area-security-guard"> </a></td><td>Turvateenistuja tervisenõuded ja tervisekontroll</td></tr><tr><td style="white-space:nowrap">radiation<a name="ee-health-certificate-usage-area-radiation"> </a></td><td>Kiirgustöötaja tervisekontroll</td></tr><tr><td style="white-space:nowrap">rescue<a name="ee-health-certificate-usage-area-rescue"> </a></td><td>Päästeteenistujate tervisekontroll</td></tr><tr><td style="white-space:nowrap">volunteer-rescue<a name="ee-health-certificate-usage-area-volunteer-rescue"> </a></td><td>Vabatahtliku merepäästja, päästja ja abidemineerija tervisekontroll</td></tr><tr><td style="white-space:nowrap">volunteer-police<a name="ee-health-certificate-usage-area-volunteer-police"> </a></td><td>Abipolitseiniku ja abipolitseinikuks astuda soovija tervisekontroll</td></tr><tr><td style="white-space:nowrap">military<a name="ee-health-certificate-usage-area-military"> </a></td><td>Kaitseväeteenistuse Tervisekontroll</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificateUsageArea"/>
+  <title value="Tervisetõendi kasutusala"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:12:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="occupational"/>
+    <display value="Töötervishoiu tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="driver"/>
+    <display value="Mootorsõidukijuhi tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="diver"/>
+    <display value="Tuukrite tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="blaster"/>
+    <display value="Lõhkaja, lõhkemeistri ja pürotehniku tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="railway"/>
+    <display value="Raudteetöötaja tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="foreign-intelligence"/>
+    <display value="Välisluureameti ametniku ja töötaja tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="police"/>
+    <display value="Politseiametniku tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="prison-service"/>
+    <display value="Vanglateenistuse ametniku tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="security-police"/>
+    <display value="Kaitsepolitseiameti ametniku ja töötaja tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="maritime"/>
+    <display value="Meretööga seotud isikute tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="security-guard"/>
+    <display value="Turvateenistuja tervisenõuded ja tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="radiation"/>
+    <display value="Kiirgustöötaja tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="rescue"/>
+    <display value="Päästeteenistujate tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="volunteer-rescue"/>
+    <display value="Vabatahtliku merepäästja, päästja ja abidemineerija tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="volunteer-police"/>
+    <display value="Abipolitseiniku ja abipolitseinikuks astuda soovija tervisekontroll"/>
+  </concept>
+  <concept>
+    <code value="military"/>
+    <display value="Kaitseväeteenistuse Tervisekontroll"/>
+  </concept>
+</CodeSystem>

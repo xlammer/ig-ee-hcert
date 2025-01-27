@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-health-certificate-restriction"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-health-certificate-restriction</b></p><a name=\"ee-health-certificate-restriction\"> </a><a name=\"hcee-health-certificate-restriction\"> </a><a name=\"ee-health-certificate-restriction-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">glasses<a name=\"ee-health-certificate-restriction-glasses\"> </a></td><td>prillid</td></tr><tr><td style=\"white-space:nowrap\">contact-lenses<a name=\"ee-health-certificate-restriction-contact-lenses\"> </a></td><td>kontaktläätsed</td></tr><tr><td style=\"white-space:nowrap\">sun-shade<a name=\"ee-health-certificate-restriction-sun-shade\"> </a></td><td>päikesevari</td></tr><tr><td style=\"white-space:nowrap\">glasses-or-lenses<a name=\"ee-health-certificate-restriction-glasses-or-lenses\"> </a></td><td>prillid või kontaktläätsed</td></tr><tr><td style=\"white-space:nowrap\">specific-optical-aid<a name=\"ee-health-certificate-restriction-specific-optical-aid\"> </a></td><td>petsiifiline optiline abivahend</td></tr><tr><td style=\"white-space:nowrap\">hearing-aid<a name=\"ee-health-certificate-restriction-hearing-aid\"> </a></td><td>kuuldeaparaat / suhtlemise abivahend</td></tr><tr><td style=\"white-space:nowrap\">arm-prosthesis<a name=\"ee-health-certificate-restriction-arm-prosthesis\"> </a></td><td>käeprotees/-ortoos</td></tr><tr><td style=\"white-space:nowrap\">leg-prosthesis<a name=\"ee-health-certificate-restriction-leg-prosthesis\"> </a></td><td>jalaprotees/-ortoos</td></tr><tr><td style=\"white-space:nowrap\">daytime-driving-only<a name=\"ee-health-certificate-restriction-daytime-driving-only\"> </a></td><td>sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)</td></tr><tr><td style=\"white-space:nowrap\">limited-radius-driving<a name=\"ee-health-certificate-restriction-limited-radius-driving\"> </a></td><td>sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires</td></tr><tr><td style=\"white-space:nowrap\">no-passenger-driving<a name=\"ee-health-certificate-restriction-no-passenger-driving\"> </a></td><td>sõit ilma kaassõitjata</td></tr><tr><td style=\"white-space:nowrap\">limited-speed-driving<a name=\"ee-health-certificate-restriction-limited-speed-driving\"> </a></td><td>sõit üksnes kiirusel kuni … km/h</td></tr><tr><td style=\"white-space:nowrap\">supervised-driving<a name=\"ee-health-certificate-restriction-supervised-driving\"> </a></td><td>juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel</td></tr><tr><td style=\"white-space:nowrap\">no-trailer<a name=\"ee-health-certificate-restriction-no-trailer\"> </a></td><td>ilma haagiseta</td></tr><tr><td style=\"white-space:nowrap\">no-highways<a name=\"ee-health-certificate-restriction-no-highways\"> </a></td><td>kiirteel sõitmine keelatud</td></tr><tr><td style=\"white-space:nowrap\">no-alcohol<a name=\"ee-health-certificate-restriction-no-alcohol\"> </a></td><td>alkoholi tarbimine keelatud</td></tr><tr><td style=\"white-space:nowrap\">no-night-work<a name=\"ee-health-certificate-restriction-no-night-work\"> </a></td><td>Ei sobi öö töö</td></tr><tr><td style=\"white-space:nowrap\">no-solo-work<a name=\"ee-health-certificate-restriction-no-solo-work\"> </a></td><td>Ei sobi töötama üksinda</td></tr><tr><td style=\"white-space:nowrap\">limited-work-hours<a name=\"ee-health-certificate-restriction-limited-work-hours\"> </a></td><td>Lubatud tööpäeva pikkus kuni … tundi</td></tr><tr><td style=\"white-space:nowrap\">no-heavy-lifting<a name=\"ee-health-certificate-restriction-no-heavy-lifting\"> </a></td><td>Vältida käsitsi raskuste teisaldamine üle … kg</td></tr><tr><td style=\"white-space:nowrap\">no-height-work<a name=\"ee-health-certificate-restriction-no-height-work\"> </a></td><td>Ei ole lubatud töö kõrgustes … meetrit ja rohkem</td></tr><tr><td style=\"white-space:nowrap\">no-electrical-work<a name=\"ee-health-certificate-restriction-no-electrical-work\"> </a></td><td>Ei ole lubatud töö pingestatud elektriseadmetega</td></tr><tr><td style=\"white-space:nowrap\">no-moving-machinery<a name=\"ee-health-certificate-restriction-no-moving-machinery\"> </a></td><td>Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)</td></tr><tr><td style=\"white-space:nowrap\">restricted-environmental-hazards<a name=\"ee-health-certificate-restriction-restricted-environmental-hazards\"> </a></td><td>Ei sobi töö järgmiste töökeskkonna ohuteguritega: ....</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEHealthCertificateRestriction"] ; # 
+  fhir:title [ fhir:v "Tervisetõendi piirang"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-27T10:00:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "abi@tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Piirangute nimekiri erinevate kasutusalade lõikes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EST" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "24"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "glasses" ] ;
+     fhir:display [ fhir:v "prillid" ]
+  ] [
+     fhir:code [ fhir:v "contact-lenses" ] ;
+     fhir:display [ fhir:v "kontaktläätsed" ]
+  ] [
+     fhir:code [ fhir:v "sun-shade" ] ;
+     fhir:display [ fhir:v "päikesevari" ]
+  ] [
+     fhir:code [ fhir:v "glasses-or-lenses" ] ;
+     fhir:display [ fhir:v "prillid või kontaktläätsed" ]
+  ] [
+     fhir:code [ fhir:v "specific-optical-aid" ] ;
+     fhir:display [ fhir:v "petsiifiline optiline abivahend" ]
+  ] [
+     fhir:code [ fhir:v "hearing-aid" ] ;
+     fhir:display [ fhir:v "kuuldeaparaat / suhtlemise abivahend" ]
+  ] [
+     fhir:code [ fhir:v "arm-prosthesis" ] ;
+     fhir:display [ fhir:v "käeprotees/-ortoos" ]
+  ] [
+     fhir:code [ fhir:v "leg-prosthesis" ] ;
+     fhir:display [ fhir:v "jalaprotees/-ortoos" ]
+  ] [
+     fhir:code [ fhir:v "daytime-driving-only" ] ;
+     fhir:display [ fhir:v "sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)" ]
+  ] [
+     fhir:code [ fhir:v "limited-radius-driving" ] ;
+     fhir:display [ fhir:v "sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires" ]
+  ] [
+     fhir:code [ fhir:v "no-passenger-driving" ] ;
+     fhir:display [ fhir:v "sõit ilma kaassõitjata" ]
+  ] [
+     fhir:code [ fhir:v "limited-speed-driving" ] ;
+     fhir:display [ fhir:v "sõit üksnes kiirusel kuni … km/h" ]
+  ] [
+     fhir:code [ fhir:v "supervised-driving" ] ;
+     fhir:display [ fhir:v "juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel" ]
+  ] [
+     fhir:code [ fhir:v "no-trailer" ] ;
+     fhir:display [ fhir:v "ilma haagiseta" ]
+  ] [
+     fhir:code [ fhir:v "no-highways" ] ;
+     fhir:display [ fhir:v "kiirteel sõitmine keelatud" ]
+  ] [
+     fhir:code [ fhir:v "no-alcohol" ] ;
+     fhir:display [ fhir:v "alkoholi tarbimine keelatud" ]
+  ] [
+     fhir:code [ fhir:v "no-night-work" ] ;
+     fhir:display [ fhir:v "Ei sobi öö töö" ]
+  ] [
+     fhir:code [ fhir:v "no-solo-work" ] ;
+     fhir:display [ fhir:v "Ei sobi töötama üksinda" ]
+  ] [
+     fhir:code [ fhir:v "limited-work-hours" ] ;
+     fhir:display [ fhir:v "Lubatud tööpäeva pikkus kuni … tundi" ]
+  ] [
+     fhir:code [ fhir:v "no-heavy-lifting" ] ;
+     fhir:display [ fhir:v "Vältida käsitsi raskuste teisaldamine üle … kg" ]
+  ] [
+     fhir:code [ fhir:v "no-height-work" ] ;
+     fhir:display [ fhir:v "Ei ole lubatud töö kõrgustes … meetrit ja rohkem" ]
+  ] [
+     fhir:code [ fhir:v "no-electrical-work" ] ;
+     fhir:display [ fhir:v "Ei ole lubatud töö pingestatud elektriseadmetega" ]
+  ] [
+     fhir:code [ fhir:v "no-moving-machinery" ] ;
+     fhir:display [ fhir:v "Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)" ]
+  ] [
+     fhir:code [ fhir:v "restricted-environmental-hazards" ] ;
+     fhir:display [ fhir:v "Ei sobi töö järgmiste töökeskkonna ohuteguritega: ...." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

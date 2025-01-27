@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="4822345d-3f7a-4f75-9ec9-161bb198cb5c"/>
+  <meta>
+    <lastUpdated value="2025-01-27T10:12:32.851+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-decision"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-ee-health-certificate-decision.html">codesystem Tervisetõendi otsus v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision-yes"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-decision.html#ee-health-certificate-decision-yes">yes</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision</td>
+                <td>Sobib</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision-yes-with-restrictions"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-decision.html#ee-health-certificate-decision-yes-with-restrictions">yes-with-restrictions</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision</td>
+                <td>Sobib piirangutega</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision-no"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-decision.html#ee-health-certificate-decision-no">no</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision</td>
+                <td>Ei sobi</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-decision"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateDecisionVS"/>
+        <title value="Tervisetõendi otsus"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:51fa14df-6975-43ec-8584-0bac3b935e6b"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"/>
+            <code value="yes"/>
+            <display value="Sobib"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"/>
+            <code value="yes-with-restrictions"/>
+            <display value="Sobib piirangutega"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"/>
+            <code value="no"/>
+            <display value="Ei sobi"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-driver-medical-restriction"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-ee-health-certificate-restriction.html">codesystem Tervisetõendi piirang v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 16 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-glasses"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-glasses">glasses</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>prillid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-contact-lenses"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-contact-lenses">contact-lenses</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>kontaktläätsed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-sun-shade"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-sun-shade">sun-shade</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>päikesevari</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-glasses-or-lenses"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-glasses-or-lenses">glasses-or-lenses</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>prillid või kontaktläätsed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-specific-optical-aid"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-specific-optical-aid">specific-optical-aid</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>petsiifiline optiline abivahend</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-hearing-aid"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-hearing-aid">hearing-aid</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>kuuldeaparaat / suhtlemise abivahend</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-arm-prosthesis"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-arm-prosthesis">arm-prosthesis</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>käeprotees/-ortoos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-leg-prosthesis"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-leg-prosthesis">leg-prosthesis</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>jalaprotees/-ortoos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-daytime-driving-only"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-daytime-driving-only">daytime-driving-only</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-limited-radius-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-radius-driving">limited-radius-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-passenger-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-passenger-driving">no-passenger-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit ilma kaassõitjata</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-limited-speed-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-speed-driving">limited-speed-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit üksnes kiirusel kuni … km/h</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-supervised-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-supervised-driving">supervised-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-trailer"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-trailer">no-trailer</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>ilma haagiseta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-highways"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-highways">no-highways</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>kiirteel sõitmine keelatud</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-alcohol"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-alcohol">no-alcohol</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>alkoholi tarbimine keelatud</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-driver-medical-restriction"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateDriverMedicalRestrictionVS"/>
+        <title value="Mootosõidukijuhi tervisetõendi meditsiiniline piirang"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:579c8150-74fe-4c54-8fa1-26123d97cc5b"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="16"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="glasses"/>
+            <display value="prillid"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="contact-lenses"/>
+            <display value="kontaktläätsed"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="sun-shade"/>
+            <display value="päikesevari"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="glasses-or-lenses"/>
+            <display value="prillid või kontaktläätsed"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="specific-optical-aid"/>
+            <display value="petsiifiline optiline abivahend"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="hearing-aid"/>
+            <display value="kuuldeaparaat / suhtlemise abivahend"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="arm-prosthesis"/>
+            <display value="käeprotees/-ortoos"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="leg-prosthesis"/>
+            <display value="jalaprotees/-ortoos"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="daytime-driving-only"/>
+            <display value="sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="limited-radius-driving"/>
+            <display value="sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-passenger-driving"/>
+            <display value="sõit ilma kaassõitjata"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="limited-speed-driving"/>
+            <display value="sõit üksnes kiirusel kuni … km/h"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="supervised-driving"/>
+            <display value="juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-trailer"/>
+            <display value="ilma haagiseta"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-highways"/>
+            <display value="kiirteel sõitmine keelatud"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-alcohol"/>
+            <display value="alkoholi tarbimine keelatud"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-ee-health-certificate-restriction.html">codesystem Tervisetõendi piirang v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 24 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-glasses"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-glasses">glasses</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>prillid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-contact-lenses"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-contact-lenses">contact-lenses</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>kontaktläätsed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-sun-shade"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-sun-shade">sun-shade</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>päikesevari</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-glasses-or-lenses"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-glasses-or-lenses">glasses-or-lenses</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>prillid või kontaktläätsed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-specific-optical-aid"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-specific-optical-aid">specific-optical-aid</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>petsiifiline optiline abivahend</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-hearing-aid"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-hearing-aid">hearing-aid</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>kuuldeaparaat / suhtlemise abivahend</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-arm-prosthesis"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-arm-prosthesis">arm-prosthesis</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>käeprotees/-ortoos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-leg-prosthesis"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-leg-prosthesis">leg-prosthesis</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>jalaprotees/-ortoos</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-daytime-driving-only"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-daytime-driving-only">daytime-driving-only</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-limited-radius-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-radius-driving">limited-radius-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-passenger-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-passenger-driving">no-passenger-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit ilma kaassõitjata</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-limited-speed-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-speed-driving">limited-speed-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>sõit üksnes kiirusel kuni … km/h</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-supervised-driving"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-supervised-driving">supervised-driving</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-trailer"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-trailer">no-trailer</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>ilma haagiseta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-highways"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-highways">no-highways</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>kiirteel sõitmine keelatud</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-alcohol"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-alcohol">no-alcohol</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>alkoholi tarbimine keelatud</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-night-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-night-work">no-night-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei sobi öö töö</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-solo-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-solo-work">no-solo-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei sobi töötama üksinda</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-limited-work-hours"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-work-hours">limited-work-hours</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Lubatud tööpäeva pikkus kuni … tundi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-heavy-lifting"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-heavy-lifting">no-heavy-lifting</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Vältida käsitsi raskuste teisaldamine üle … kg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-height-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-height-work">no-height-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei ole lubatud töö kõrgustes … meetrit ja rohkem</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-electrical-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-electrical-work">no-electrical-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei ole lubatud töö pingestatud elektriseadmetega</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-moving-machinery"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-moving-machinery">no-moving-machinery</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-restricted-environmental-hazards"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-restricted-environmental-hazards">restricted-environmental-hazards</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei sobi töö järgmiste töökeskkonna ohuteguritega: ....</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateMedicalRestrictionVS"/>
+        <title value="Tervisetõendi meditsiiniline piirang"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2af71059-fad9-4359-9ab9-628e6a1a70cd"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="24"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="glasses"/>
+            <display value="prillid"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="contact-lenses"/>
+            <display value="kontaktläätsed"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="sun-shade"/>
+            <display value="päikesevari"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="glasses-or-lenses"/>
+            <display value="prillid või kontaktläätsed"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="specific-optical-aid"/>
+            <display value="petsiifiline optiline abivahend"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="hearing-aid"/>
+            <display value="kuuldeaparaat / suhtlemise abivahend"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="arm-prosthesis"/>
+            <display value="käeprotees/-ortoos"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="leg-prosthesis"/>
+            <display value="jalaprotees/-ortoos"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="daytime-driving-only"/>
+            <display value="sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="limited-radius-driving"/>
+            <display value="sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-passenger-driving"/>
+            <display value="sõit ilma kaassõitjata"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="limited-speed-driving"/>
+            <display value="sõit üksnes kiirusel kuni … km/h"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="supervised-driving"/>
+            <display value="juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-trailer"/>
+            <display value="ilma haagiseta"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-highways"/>
+            <display value="kiirteel sõitmine keelatud"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-alcohol"/>
+            <display value="alkoholi tarbimine keelatud"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-night-work"/>
+            <display value="Ei sobi öö töö"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-solo-work"/>
+            <display value="Ei sobi töötama üksinda"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="limited-work-hours"/>
+            <display value="Lubatud tööpäeva pikkus kuni … tundi"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-heavy-lifting"/>
+            <display value="Vältida käsitsi raskuste teisaldamine üle … kg"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-height-work"/>
+            <display value="Ei ole lubatud töö kõrgustes … meetrit ja rohkem"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-electrical-work"/>
+            <display value="Ei ole lubatud töö pingestatud elektriseadmetega"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-moving-machinery"/>
+            <display value="Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="restricted-environmental-hazards"/>
+            <display value="Ei sobi töö järgmiste töökeskkonna ohuteguritega: ...."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html">codesystem Püsiva töövõime säilitamiseks vajalik lisatingimus v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition-safety-gear"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html#ee-health-certificate-occupational-additional-condition-safety-gear">safety-gear</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</td>
+                <td>Isikukaitsevahendid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition-work-related-changes"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html#ee-health-certificate-occupational-additional-condition-work-related-changes">work-related-changes</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</td>
+                <td>Töökorralduslikud muudatused</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition-work-environment"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html#ee-health-certificate-occupational-additional-condition-work-environment">work-environment</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</td>
+                <td>Töökeskkond</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition-other"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-occupational-additional-condition.html#ee-health-certificate-occupational-additional-condition-other">other</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</td>
+                <td>Muu</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateOccupationalAdditionalConditionVS"/>
+        <title value="Püsiva töövõime säilitamiseks vajalik lisatingimus"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3a185040-d20f-45f5-bc94-27edc99e0b58"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"/>
+            <code value="safety-gear"/>
+            <display value="Isikukaitsevahendid"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"/>
+            <code value="work-related-changes"/>
+            <display value="Töökorralduslikud muudatused"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"/>
+            <code value="work-environment"/>
+            <display value="Töökeskkond"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"/>
+            <code value="other"/>
+            <display value="Muu"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-ee-health-certificate-restriction.html">codesystem Tervisetõendi piirang v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 8 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-night-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-night-work">no-night-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei sobi öö töö</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-solo-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-solo-work">no-solo-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei sobi töötama üksinda</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-limited-work-hours"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-limited-work-hours">limited-work-hours</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Lubatud tööpäeva pikkus kuni … tundi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-heavy-lifting"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-heavy-lifting">no-heavy-lifting</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Vältida käsitsi raskuste teisaldamine üle … kg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-height-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-height-work">no-height-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei ole lubatud töö kõrgustes … meetrit ja rohkem</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-electrical-work"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-electrical-work">no-electrical-work</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei ole lubatud töö pingestatud elektriseadmetega</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-no-moving-machinery"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-no-moving-machinery">no-moving-machinery</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction-restricted-environmental-hazards"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-restriction.html#ee-health-certificate-restriction-restricted-environmental-hazards">restricted-environmental-hazards</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</td>
+                <td>Ei sobi töö järgmiste töökeskkonna ohuteguritega: ....</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateOccupationalMedicalRestrictionVS"/>
+        <title value="Töötervishoiu tervisetõendi meditsiiniline piirang"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4901cc7e-87bb-478d-8848-154d14562aa5"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-night-work"/>
+            <display value="Ei sobi öö töö"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-solo-work"/>
+            <display value="Ei sobi töötama üksinda"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="limited-work-hours"/>
+            <display value="Lubatud tööpäeva pikkus kuni … tundi"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-heavy-lifting"/>
+            <display value="Vältida käsitsi raskuste teisaldamine üle … kg"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-height-work"/>
+            <display value="Ei ole lubatud töö kõrgustes … meetrit ja rohkem"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-electrical-work"/>
+            <display value="Ei ole lubatud töö pingestatud elektriseadmetega"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="no-moving-machinery"/>
+            <display value="Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+            <code value="restricted-environmental-hazards"/>
+            <display value="Ei sobi töö järgmiste töökeskkonna ohuteguritega: ...."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="http://hl7.org/fhir/R5/codesystem-composition-status.html">codesystem Composition Status v5.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/composition-status-preliminary"> </a>  
+                  <a href="http://hl7.org/fhir/R5/codesystem-composition-status.html#composition-status-preliminary">preliminary</a>
+                </td>
+                <td>http://hl7.org/fhir/composition-status</td>
+                <td>Preliminary</td>
+                <td>
+                  <div>
+                    <p>Verified early results are available, but not all results are final.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/composition-status-final"> </a>  
+                  <a href="http://hl7.org/fhir/R5/codesystem-composition-status.html#composition-status-final">final</a>
+                </td>
+                <td>http://hl7.org/fhir/composition-status</td>
+                <td>Final</td>
+                <td>
+                  <div>
+                    <p>This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/composition-status-cancelled"> </a>  
+                  <a href="http://hl7.org/fhir/R5/codesystem-composition-status.html#composition-status-cancelled">cancelled</a>
+                </td>
+                <td>http://hl7.org/fhir/composition-status</td>
+                <td>Cancelled</td>
+                <td>
+                  <div>
+                    <p>The composition is unavailable because the measurement was not started or not completed (also sometimes called &quot;aborted&quot;).</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-status"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateStatusVS"/>
+        <title value="Tervisetõendi staatus"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c2bec5cc-8888-496f-a833-d75fa747bddd"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/composition-status|5.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="preliminary"/>
+            <display value="Preliminary"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="cancelled"/>
+            <display value="Cancelled"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-usage-area"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+              <a href="CodeSystem-ee-health-certificate-usage-area.html">codesystem Tervisetõendi kasutusala v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 16 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-occupational"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-occupational">occupational</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Töötervishoiu tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-driver"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-driver">driver</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Mootorsõidukijuhi tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-diver"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-diver">diver</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Tuukrite tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-blaster"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-blaster">blaster</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Lõhkaja, lõhkemeistri ja pürotehniku tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-railway"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-railway">railway</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Raudteetöötaja tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-foreign-intelligence"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-foreign-intelligence">foreign-intelligence</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Välisluureameti ametniku ja töötaja tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-police"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-police">police</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Politseiametniku tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-prison-service"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-prison-service">prison-service</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Vanglateenistuse ametniku tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-security-police"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-security-police">security-police</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Kaitsepolitseiameti ametniku ja töötaja tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-maritime"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-maritime">maritime</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Meretööga seotud isikute tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-security-guard"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-security-guard">security-guard</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Turvateenistuja tervisenõuded ja tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-radiation"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-radiation">radiation</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Kiirgustöötaja tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-rescue"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-rescue">rescue</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Päästeteenistujate tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-volunteer-rescue"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-volunteer-rescue">volunteer-rescue</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Vabatahtliku merepäästja, päästja ja abidemineerija tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-volunteer-police"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-volunteer-police">volunteer-police</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Abipolitseiniku ja abipolitseinikuks astuda soovija tervisekontroll</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area-military"> </a>  
+                  <a href="CodeSystem-ee-health-certificate-usage-area.html#ee-health-certificate-usage-area-military">military</a>
+                </td>
+                <td>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area</td>
+                <td>Kaitseväeteenistuse Tervisekontroll</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.ee/hcert/ValueSet/ee-health-certificate-usage-area"/>
+        <version value="1.0.0"/>
+        <name value="EEHealthCertificateUsageAreaVS"/>
+        <title value="Tervisetõendi kasutusala"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-01-27T10:12:32+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="EST"/>
+            <display value="Estonia"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2741e2c4-970b-47ab-91c0-8c52095f6c6f"/>
+          <timestamp value="2025-01-27T10:13:18+00:00"/>
+          <total value="16"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="occupational"/>
+            <display value="Töötervishoiu tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="driver"/>
+            <display value="Mootorsõidukijuhi tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="diver"/>
+            <display value="Tuukrite tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="blaster"/>
+            <display value="Lõhkaja, lõhkemeistri ja pürotehniku tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="railway"/>
+            <display value="Raudteetöötaja tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="foreign-intelligence"/>
+            <display value="Välisluureameti ametniku ja töötaja tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="police"/>
+            <display value="Politseiametniku tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="prison-service"/>
+            <display value="Vanglateenistuse ametniku tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="security-police"/>
+            <display value="Kaitsepolitseiameti ametniku ja töötaja tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="maritime"/>
+            <display value="Meretööga seotud isikute tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="security-guard"/>
+            <display value="Turvateenistuja tervisenõuded ja tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="radiation"/>
+            <display value="Kiirgustöötaja tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="rescue"/>
+            <display value="Päästeteenistujate tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="volunteer-rescue"/>
+            <display value="Vabatahtliku merepäästja, päästja ja abidemineerija tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="volunteer-police"/>
+            <display value="Abipolitseiniku ja abipolitseinikuks astuda soovija tervisekontroll"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"/>
+            <code value="military"/>
+            <display value="Kaitseväeteenistuse Tervisekontroll"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

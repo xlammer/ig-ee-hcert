@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-decision"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ee-health-certificate-decision</b></p><a name="ee-health-certificate-decision"> </a><a name="hcee-health-certificate-decision"> </a><a name="ee-health-certificate-decision-en-US"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">yes<a name="ee-health-certificate-decision-yes"> </a></td><td>Sobib</td></tr><tr><td style="white-space:nowrap">yes-with-restrictions<a name="ee-health-certificate-decision-yes-with-restrictions"> </a></td><td>Sobib piirangutega</td></tr><tr><td style="white-space:nowrap">no<a name="ee-health-certificate-decision-no"> </a></td><td>Ei sobi</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificateDecision"/>
+  <title value="Tervisetõendi otsus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:12:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="yes"/>
+    <display value="Sobib"/>
+  </concept>
+  <concept>
+    <code value="yes-with-restrictions"/>
+    <display value="Sobib piirangutega"/>
+  </concept>
+  <concept>
+    <code value="no"/>
+    <display value="Ei sobi"/>
+  </concept>
+</CodeSystem>

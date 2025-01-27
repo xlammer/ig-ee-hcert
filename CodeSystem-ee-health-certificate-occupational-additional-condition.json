@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ee-health-certificate-occupational-additional-condition",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-health-certificate-occupational-additional-condition</b></p><a name=\"ee-health-certificate-occupational-additional-condition\"> </a><a name=\"hcee-health-certificate-occupational-additional-condition\"> </a><a name=\"ee-health-certificate-occupational-additional-condition-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">safety-gear<a name=\"ee-health-certificate-occupational-additional-condition-safety-gear\"> </a></td><td>Isikukaitsevahendid</td></tr><tr><td style=\"white-space:nowrap\">work-related-changes<a name=\"ee-health-certificate-occupational-additional-condition-work-related-changes\"> </a></td><td>Töökorralduslikud muudatused</td></tr><tr><td style=\"white-space:nowrap\">work-environment<a name=\"ee-health-certificate-occupational-additional-condition-work-environment\"> </a></td><td>Töökeskkond</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"ee-health-certificate-occupational-additional-condition-other\"> </a></td><td>Muu</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition",
+  "version" : "1.0.0",
+  "name" : "EEHealthCertificateOccupationalAdditionalCondition",
+  "title" : "Püsiva töövõime säilitamiseks vajalik lisatingimus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-27T10:00:30+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    },
+    {
+      "system" : "email",
+      "value" : "abi@tehik.ee"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EST",
+      "display" : "Estonia"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "safety-gear",
+    "display" : "Isikukaitsevahendid"
+  },
+  {
+    "code" : "work-related-changes",
+    "display" : "Töökorralduslikud muudatused"
+  },
+  {
+    "code" : "work-environment",
+    "display" : "Töökeskkond"
+  },
+  {
+    "code" : "other",
+    "display" : "Muu"
+  }]
+}

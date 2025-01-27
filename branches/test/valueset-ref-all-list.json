@@ -1,0 +1,691 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who    interacted with, treated, or provided a service to/for the patient. The value set used    for clinical specialty has been limited by HITSP to the value set reproduced from HITSP    C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.134",
+        "2.16.840.1.113883.3.88.12.80.72"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.134",
+        "2.16.840.1.113883.3.88.12.80.72"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "Composition Attestation Mode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.233",
+        "2.16.840.1.113883.4.642.3.238",
+        "2.16.840.1.113883.4.642.2.120"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.233",
+        "2.16.840.1.113883.4.642.3.238",
+        "2.16.840.1.113883.4.642.2.120"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "Data Absent Reason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DocumentSectionCodes",
+      "title" : "Document Section Codes",
+      "description" : "Document section codes (LOINC codes used in CCDA sections).",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.2.119",
+        "2.16.840.1.113883.4.642.3.237"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.232",
+        "2.16.840.1.113883.4.642.2.119",
+        "2.16.840.1.113883.4.642.3.237"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "FHIRDocumentTypeCodes",
+      "title" : "FHIR Document Type Codes",
+      "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.235",
+        "2.16.840.1.113883.4.642.2.121",
+        "2.16.840.1.113883.4.642.3.240"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.235",
+        "2.16.840.1.113883.4.642.2.121",
+        "2.16.840.1.113883.4.642.3.240"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.322",
+        "2.16.840.1.113883.4.642.3.313",
+        "2.16.840.1.113883.4.642.2.176"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.322",
+        "2.16.840.1.113883.4.642.3.313",
+        "2.16.840.1.113883.4.642.2.176"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-order",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.315",
+        "2.16.840.1.113883.4.642.3.324",
+        "2.16.840.1.113883.4.642.2.177"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.315",
+        "2.16.840.1.113883.4.642.3.324",
+        "2.16.840.1.113883.4.642.2.177"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/narrative-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "NarrativeStatus",
+      "title" : "NarrativeStatus",
+      "description" : "The status of a resource narrative.",
+      "systems" : ["http://hl7.org/fhir/narrative-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.55"],
+      "sources" : ["2.16.840.1.113883.4.642.3.55"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeNormalValueCodes",
+      "title" : "Observation Reference Range Normal Value Codes",
+      "description" : "Codes that describe the normal value in the reference range, such as “Negative” or “Absent”",
+      "systems" : ["http://hl7.org/fhir/observation-referencerange-normalvalue"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3264"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3264"],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the type of triggeredBy observation.",
+      "systems" : ["http://hl7.org/fhir/observation-triggeredbytype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3265"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3265"],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner Role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.430",
+        "2.16.840.1.113883.4.642.2.251",
+        "2.16.840.1.113883.4.642.3.439"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.430",
+        "2.16.840.1.113883.4.642.2.251",
+        "2.16.840.1.113883.4.642.3.439"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-HcertObservation.html" : "Temporary Observation",
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-mode",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ServiceMode",
+      "title" : "Service Mode",
+      "description" : "An example set of Service Modes that could be applicable to use to characterize HealthcareServices or PractitionerRoles while searching",
+      "systems" : ["http://hl7.org/fhir/service-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.4.3322"],
+      "sources" : ["2.16.840.1.113883.4.642.4.3322"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/toost-olenevad-ohutegurid",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ToostOlenevadOhutegurid",
+      "title" : "Tööst olenevad ohutegurid",
+      "description" : "Rasedakaart - raseda töökohast olenevad ohutegurid: füüsikalised, keemilised, bioloogilised, füsioloogilised ja psüholoogilised, ja kantserogeenset ja mutageenset ohtu põhjustavad tööprotsessid.",
+      "systems" : ["https://fhir.ee/CodeSystem/toost-olenevad-ohutegurid"],
+      "oids" : ["1.3.6.1.4.1.28284.6.2.3.22.1", "1.3.6.1.4.1.28284.6.2.3.22"],
+      "sources" : ["1.3.6.1.4.1.28284.6.2.3.22.1", "1.3.6.1.4.1.28284.6.2.3.22"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-decision",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateDecisionVS",
+      "title" : "Tervisetõendi otsus",
+      "description" : null,
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-driver-medical-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateDriverMedicalRestrictionVS",
+      "title" : "Mootosõidukijuhi tervisetõendi meditsiiniline piirang",
+      "description" : "Piirangud mootorsõiduki juhtimiseks",
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-medical-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateMedicalRestrictionVS",
+      "title" : "Tervisetõendi meditsiiniline piirang",
+      "description" : "Kõik piirangud",
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+      ]
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-additional-condition",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateOccupationalAdditionalConditionVS",
+      "title" : "Püsiva töövõime säilitamiseks vajalik lisatingimus",
+      "description" : null,
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-occupational-medical-restriction",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateOccupationalMedicalRestrictionVS",
+      "title" : "Töötervishoiu tervisetõendi meditsiiniline piirang",
+      "description" : "Piirangud töötamiseks",
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateStatusVS",
+      "title" : "Tervisetõendi staatus",
+      "description" : null,
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale"
+    },
+    {
+      "url" : "https://fhir.ee/hcert/ValueSet/ee-health-certificate-usage-area",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "EEHealthCertificateUsageAreaVS",
+      "title" : "Tervisetõendi kasutusala",
+      "description" : null,
+      "systems" : [
+        "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-usage-area"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-health-certificate-driver.html" : "Mootosõidukijuhi tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational.html" : "Töötervishoiu tervisetõend",
+      "StructureDefinition-ee-health-certificate.html" : "Tervisetõend",
+      "StructureDefinition-ee-health-certificate-occupational-employer.html" : "Töötervishoiu tervisetõend tööandjale"
+    }
+  ]
+}

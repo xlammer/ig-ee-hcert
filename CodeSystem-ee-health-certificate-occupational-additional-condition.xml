@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-occupational-additional-condition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ee-health-certificate-occupational-additional-condition</b></p><a name="ee-health-certificate-occupational-additional-condition"> </a><a name="hcee-health-certificate-occupational-additional-condition"> </a><a name="ee-health-certificate-occupational-additional-condition-en-US"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">safety-gear<a name="ee-health-certificate-occupational-additional-condition-safety-gear"> </a></td><td>Isikukaitsevahendid</td></tr><tr><td style="white-space:nowrap">work-related-changes<a name="ee-health-certificate-occupational-additional-condition-work-related-changes"> </a></td><td>Töökorralduslikud muudatused</td></tr><tr><td style="white-space:nowrap">work-environment<a name="ee-health-certificate-occupational-additional-condition-work-environment"> </a></td><td>Töökeskkond</td></tr><tr><td style="white-space:nowrap">other<a name="ee-health-certificate-occupational-additional-condition-other"> </a></td><td>Muu</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-occupational-additional-condition"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificateOccupationalAdditionalCondition"/>
+  <title value="Püsiva töövõime säilitamiseks vajalik lisatingimus"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:00:30+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="safety-gear"/>
+    <display value="Isikukaitsevahendid"/>
+  </concept>
+  <concept>
+    <code value="work-related-changes"/>
+    <display value="Töökorralduslikud muudatused"/>
+  </concept>
+  <concept>
+    <code value="work-environment"/>
+    <display value="Töökeskkond"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Muu"/>
+  </concept>
+</CodeSystem>

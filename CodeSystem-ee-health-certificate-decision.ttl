@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-health-certificate-decision"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-health-certificate-decision</b></p><a name=\"ee-health-certificate-decision\"> </a><a name=\"hcee-health-certificate-decision\"> </a><a name=\"ee-health-certificate-decision-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"ee-health-certificate-decision-yes\"> </a></td><td>Sobib</td></tr><tr><td style=\"white-space:nowrap\">yes-with-restrictions<a name=\"ee-health-certificate-decision-yes-with-restrictions\"> </a></td><td>Sobib piirangutega</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"ee-health-certificate-decision-no\"> </a></td><td>Ei sobi</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-decision"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEHealthCertificateDecision"] ; # 
+  fhir:title [ fhir:v "Tervisetõendi otsus"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-27T10:00:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "abi@tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EST" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "yes" ] ;
+     fhir:display [ fhir:v "Sobib" ]
+  ] [
+     fhir:code [ fhir:v "yes-with-restrictions" ] ;
+     fhir:display [ fhir:v "Sobib piirangutega" ]
+  ] [
+     fhir:code [ fhir:v "no" ] ;
+     fhir:display [ fhir:v "Ei sobi" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

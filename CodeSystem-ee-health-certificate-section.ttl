@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-health-certificate-section"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ee-health-certificate-section</b></p><a name=\"ee-health-certificate-section\"> </a><a name=\"hcee-health-certificate-section\"> </a><a name=\"ee-health-certificate-section-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">decision<a name=\"ee-health-certificate-section-decision\"> </a></td><td>Tervisetõendi otsus</td></tr><tr><td style=\"white-space:nowrap\">shortened-reason<a name=\"ee-health-certificate-section-shortened-reason\"> </a></td><td>Lühema tervisekontrolli aja põhjus</td></tr><tr><td style=\"white-space:nowrap\">reject-reason<a name=\"ee-health-certificate-section-reject-reason\"> </a></td><td>Eitava otsuse põhjendus</td></tr><tr><td style=\"white-space:nowrap\">change-reason<a name=\"ee-health-certificate-section-change-reason\"> </a></td><td>Tervisetõendi muutmise põhjus</td></tr><tr><td style=\"white-space:nowrap\">cancel-reason<a name=\"ee-health-certificate-section-cancel-reason\"> </a></td><td>Tervisetõendi tühistamise põhjus</td></tr><tr><td style=\"white-space:nowrap\">suspend-reason<a name=\"ee-health-certificate-section-suspend-reason\"> </a></td><td>Tervisetõendi peatamise põhjus</td></tr><tr><td style=\"white-space:nowrap\">risk-factors<a name=\"ee-health-certificate-section-risk-factors\"> </a></td><td>Tööst olenevad ohutegurid</td></tr><tr><td style=\"white-space:nowrap\">employer<a name=\"ee-health-certificate-section-employer\"> </a></td><td>Tööandja</td></tr><tr><td style=\"white-space:nowrap\">health-declaration<a name=\"ee-health-certificate-section-health-declaration\"> </a></td><td>Tervisedeklaratsioon</td></tr><tr><td style=\"white-space:nowrap\">medical-restrictions<a name=\"ee-health-certificate-section-medical-restrictions\"> </a></td><td>Meditsiinilised piirangud</td></tr><tr><td style=\"white-space:nowrap\">work-additional-conditions<a name=\"ee-health-certificate-section-work-additional-conditions\"> </a></td><td>Püsiva töövõime säilitamiseks vajalikud lisatingimused</td></tr><tr><td style=\"white-space:nowrap\">employer-suggestions<a name=\"ee-health-certificate-section-employer-suggestions\"> </a></td><td>Ettepanekud tööandjale</td></tr><tr><td style=\"white-space:nowrap\">employee-suggestions<a name=\"ee-health-certificate-section-employee-suggestions\"> </a></td><td>Ettepanekud töötajale</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/hcert/CodeSystem/ee-health-certificate-section"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEHealthCertificateSection"] ; # 
+  fhir:title [ fhir:v "Tervisetõendi sektsioon"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-27T10:00:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "abi@tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EST" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "decision" ] ;
+     fhir:display [ fhir:v "Tervisetõendi otsus" ]
+  ] [
+     fhir:code [ fhir:v "shortened-reason" ] ;
+     fhir:display [ fhir:v "Lühema tervisekontrolli aja põhjus" ]
+  ] [
+     fhir:code [ fhir:v "reject-reason" ] ;
+     fhir:display [ fhir:v "Eitava otsuse põhjendus" ]
+  ] [
+     fhir:code [ fhir:v "change-reason" ] ;
+     fhir:display [ fhir:v "Tervisetõendi muutmise põhjus" ]
+  ] [
+     fhir:code [ fhir:v "cancel-reason" ] ;
+     fhir:display [ fhir:v "Tervisetõendi tühistamise põhjus" ]
+  ] [
+     fhir:code [ fhir:v "suspend-reason" ] ;
+     fhir:display [ fhir:v "Tervisetõendi peatamise põhjus" ]
+  ] [
+     fhir:code [ fhir:v "risk-factors" ] ;
+     fhir:display [ fhir:v "Tööst olenevad ohutegurid" ]
+  ] [
+     fhir:code [ fhir:v "employer" ] ;
+     fhir:display [ fhir:v "Tööandja" ]
+  ] [
+     fhir:code [ fhir:v "health-declaration" ] ;
+     fhir:display [ fhir:v "Tervisedeklaratsioon" ]
+  ] [
+     fhir:code [ fhir:v "medical-restrictions" ] ;
+     fhir:display [ fhir:v "Meditsiinilised piirangud" ]
+  ] [
+     fhir:code [ fhir:v "work-additional-conditions" ] ;
+     fhir:display [ fhir:v "Püsiva töövõime säilitamiseks vajalikud lisatingimused" ]
+  ] [
+     fhir:code [ fhir:v "employer-suggestions" ] ;
+     fhir:display [ fhir:v "Ettepanekud tööandjale" ]
+  ] [
+     fhir:code [ fhir:v "employee-suggestions" ] ;
+     fhir:display [ fhir:v "Ettepanekud töötajale" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

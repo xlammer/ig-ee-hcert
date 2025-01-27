@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-health-certificate-restriction"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ee-health-certificate-restriction</b></p><a name="ee-health-certificate-restriction"> </a><a name="hcee-health-certificate-restriction"> </a><a name="ee-health-certificate-restriction-en-US"> </a><p>This case-insensitive code system <code>https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">glasses<a name="ee-health-certificate-restriction-glasses"> </a></td><td>prillid</td></tr><tr><td style="white-space:nowrap">contact-lenses<a name="ee-health-certificate-restriction-contact-lenses"> </a></td><td>kontaktläätsed</td></tr><tr><td style="white-space:nowrap">sun-shade<a name="ee-health-certificate-restriction-sun-shade"> </a></td><td>päikesevari</td></tr><tr><td style="white-space:nowrap">glasses-or-lenses<a name="ee-health-certificate-restriction-glasses-or-lenses"> </a></td><td>prillid või kontaktläätsed</td></tr><tr><td style="white-space:nowrap">specific-optical-aid<a name="ee-health-certificate-restriction-specific-optical-aid"> </a></td><td>petsiifiline optiline abivahend</td></tr><tr><td style="white-space:nowrap">hearing-aid<a name="ee-health-certificate-restriction-hearing-aid"> </a></td><td>kuuldeaparaat / suhtlemise abivahend</td></tr><tr><td style="white-space:nowrap">arm-prosthesis<a name="ee-health-certificate-restriction-arm-prosthesis"> </a></td><td>käeprotees/-ortoos</td></tr><tr><td style="white-space:nowrap">leg-prosthesis<a name="ee-health-certificate-restriction-leg-prosthesis"> </a></td><td>jalaprotees/-ortoos</td></tr><tr><td style="white-space:nowrap">daytime-driving-only<a name="ee-health-certificate-restriction-daytime-driving-only"> </a></td><td>sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)</td></tr><tr><td style="white-space:nowrap">limited-radius-driving<a name="ee-health-certificate-restriction-limited-radius-driving"> </a></td><td>sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires</td></tr><tr><td style="white-space:nowrap">no-passenger-driving<a name="ee-health-certificate-restriction-no-passenger-driving"> </a></td><td>sõit ilma kaassõitjata</td></tr><tr><td style="white-space:nowrap">limited-speed-driving<a name="ee-health-certificate-restriction-limited-speed-driving"> </a></td><td>sõit üksnes kiirusel kuni … km/h</td></tr><tr><td style="white-space:nowrap">supervised-driving<a name="ee-health-certificate-restriction-supervised-driving"> </a></td><td>juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel</td></tr><tr><td style="white-space:nowrap">no-trailer<a name="ee-health-certificate-restriction-no-trailer"> </a></td><td>ilma haagiseta</td></tr><tr><td style="white-space:nowrap">no-highways<a name="ee-health-certificate-restriction-no-highways"> </a></td><td>kiirteel sõitmine keelatud</td></tr><tr><td style="white-space:nowrap">no-alcohol<a name="ee-health-certificate-restriction-no-alcohol"> </a></td><td>alkoholi tarbimine keelatud</td></tr><tr><td style="white-space:nowrap">no-night-work<a name="ee-health-certificate-restriction-no-night-work"> </a></td><td>Ei sobi öö töö</td></tr><tr><td style="white-space:nowrap">no-solo-work<a name="ee-health-certificate-restriction-no-solo-work"> </a></td><td>Ei sobi töötama üksinda</td></tr><tr><td style="white-space:nowrap">limited-work-hours<a name="ee-health-certificate-restriction-limited-work-hours"> </a></td><td>Lubatud tööpäeva pikkus kuni … tundi</td></tr><tr><td style="white-space:nowrap">no-heavy-lifting<a name="ee-health-certificate-restriction-no-heavy-lifting"> </a></td><td>Vältida käsitsi raskuste teisaldamine üle … kg</td></tr><tr><td style="white-space:nowrap">no-height-work<a name="ee-health-certificate-restriction-no-height-work"> </a></td><td>Ei ole lubatud töö kõrgustes … meetrit ja rohkem</td></tr><tr><td style="white-space:nowrap">no-electrical-work<a name="ee-health-certificate-restriction-no-electrical-work"> </a></td><td>Ei ole lubatud töö pingestatud elektriseadmetega</td></tr><tr><td style="white-space:nowrap">no-moving-machinery<a name="ee-health-certificate-restriction-no-moving-machinery"> </a></td><td>Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)</td></tr><tr><td style="white-space:nowrap">restricted-environmental-hazards<a name="ee-health-certificate-restriction-restricted-environmental-hazards"> </a></td><td>Ei sobi töö järgmiste töökeskkonna ohuteguritega: ....</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/hcert/CodeSystem/ee-health-certificate-restriction"/>
+  <version value="1.0.0"/>
+  <name value="EEHealthCertificateRestriction"/>
+  <title value="Tervisetõendi piirang"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-27T10:00:30+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="abi@tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="Piirangute nimekiri erinevate kasutusalade lõikes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EST"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="24"/>
+  <concept>
+    <code value="glasses"/>
+    <display value="prillid"/>
+  </concept>
+  <concept>
+    <code value="contact-lenses"/>
+    <display value="kontaktläätsed"/>
+  </concept>
+  <concept>
+    <code value="sun-shade"/>
+    <display value="päikesevari"/>
+  </concept>
+  <concept>
+    <code value="glasses-or-lenses"/>
+    <display value="prillid või kontaktläätsed"/>
+  </concept>
+  <concept>
+    <code value="specific-optical-aid"/>
+    <display value="petsiifiline optiline abivahend"/>
+  </concept>
+  <concept>
+    <code value="hearing-aid"/>
+    <display value="kuuldeaparaat / suhtlemise abivahend"/>
+  </concept>
+  <concept>
+    <code value="arm-prosthesis"/>
+    <display value="käeprotees/-ortoos"/>
+  </concept>
+  <concept>
+    <code value="leg-prosthesis"/>
+    <display value="jalaprotees/-ortoos"/>
+  </concept>
+  <concept>
+    <code value="daytime-driving-only"/>
+    <display value="sõit üksnes päevaajal (nt üks tund pärast päikesetõusu ja üks tund enne päikeseloojangut)"/>
+  </concept>
+  <concept>
+    <code value="limited-radius-driving"/>
+    <display value="sõit üksnes … km raadiuses loaomaniku elukohast või üksnes linna/piirkonna piires"/>
+  </concept>
+  <concept>
+    <code value="no-passenger-driving"/>
+    <display value="sõit ilma kaassõitjata"/>
+  </concept>
+  <concept>
+    <code value="limited-speed-driving"/>
+    <display value="sõit üksnes kiirusel kuni … km/h"/>
+  </concept>
+  <concept>
+    <code value="supervised-driving"/>
+    <display value="juhtimine lubatud üksnes vähemalt sama kategooria juhiluba omava isiku saatel"/>
+  </concept>
+  <concept>
+    <code value="no-trailer"/>
+    <display value="ilma haagiseta"/>
+  </concept>
+  <concept>
+    <code value="no-highways"/>
+    <display value="kiirteel sõitmine keelatud"/>
+  </concept>
+  <concept>
+    <code value="no-alcohol"/>
+    <display value="alkoholi tarbimine keelatud"/>
+  </concept>
+  <concept>
+    <code value="no-night-work"/>
+    <display value="Ei sobi öö töö"/>
+  </concept>
+  <concept>
+    <code value="no-solo-work"/>
+    <display value="Ei sobi töötama üksinda"/>
+  </concept>
+  <concept>
+    <code value="limited-work-hours"/>
+    <display value="Lubatud tööpäeva pikkus kuni … tundi"/>
+  </concept>
+  <concept>
+    <code value="no-heavy-lifting"/>
+    <display value="Vältida käsitsi raskuste teisaldamine üle … kg"/>
+  </concept>
+  <concept>
+    <code value="no-height-work"/>
+    <display value="Ei ole lubatud töö kõrgustes … meetrit ja rohkem"/>
+  </concept>
+  <concept>
+    <code value="no-electrical-work"/>
+    <display value="Ei ole lubatud töö pingestatud elektriseadmetega"/>
+  </concept>
+  <concept>
+    <code value="no-moving-machinery"/>
+    <display value="Ei ole lubatud töö liikuvate mehhanismidega ja nende läheduses (kuni … meetrit)"/>
+  </concept>
+  <concept>
+    <code value="restricted-environmental-hazards"/>
+    <display value="Ei sobi töö järgmiste töökeskkonna ohuteguritega: ...."/>
+  </concept>
+</CodeSystem>
